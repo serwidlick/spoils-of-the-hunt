@@ -16,6 +16,7 @@ param(
     [switch]$SkipNexus,
     [switch]$DryRun,
     [string]$ModIoNameId = 'spoils-of-the-hunt',
+    [int]$ModIoGameId = 8254,   # The Witcher 3: Wild Hunt on mod.io; the API lives on a per-game host (api.mod.io is deprecated for writes)
     [string]$NexusEditUrl = 'https://www.nexusmods.com/witcher3/mods/edit/?id=13705&step=files'
 )
 $ErrorActionPreference = 'Stop'
@@ -42,8 +43,9 @@ if (-not $SkipModIo) {
     if (-not $token) { throw "No mod.io token: set MODIO_TOKEN or write it to $env:USERPROFILE\.modio-token (or pass -SkipModIo)." }
     if ($token -match '^[0-9a-f]{32}$') { throw 'That is a mod.io API key (read-only). Uploads need an OAuth access token: mod.io > avatar > API Access > "Create an OAuth 2 Access Token" (it is several hundred characters long).' }
     $headers = @{ Authorization = "Bearer $token"; Accept = 'application/json' }
+    $api = "https://g-$ModIoGameId.modapi.io/v1"
     # resolve the mod id from the account's own mods; this also proves the token works before we change anything
-    $mine = Invoke-RestMethod -Uri "https://api.mod.io/v1/me/mods?name_id=$ModIoNameId" -Headers $headers
+    $mine = Invoke-RestMethod -Uri "$api/me/mods?name_id=$ModIoNameId" -Headers $headers
     if ($mine.result_count -ne 1) { throw "mod.io: expected exactly one of your mods with name_id '$ModIoNameId', got $($mine.result_count)." }
     $modio = $mine.data[0]
     "mod.io mod #$($modio.id) '$($modio.name)' (game #$($modio.game_id)), currently $($modio.modfile.version ?? 'no file')"
@@ -95,7 +97,7 @@ if (-not $SkipModIo) {
         active    = 'true'
         filehash  = $md5
     }
-    $file = Invoke-RestMethod -Method Post -Uri "https://api.mod.io/v1/games/$($modio.game_id)/mods/$($modio.id)/files" -Headers $headers -Form $form
+    $file = Invoke-RestMethod -Method Post -Uri "$api/games/$($modio.game_id)/mods/$($modio.id)/files" -Headers $headers -Form $form
     "mod.io file #$($file.id) version $($file.version), $($file.filesize) bytes, virus scan: $($file.virus_status) (0 = not scanned yet). Live."
     "Page: https://mod.io/g/the-witcher-3/m/$ModIoNameId"
 }
