@@ -1,0 +1,11 @@
+* text=auto
+*.ps1 text eol=crlf
+*.ws text eol=crlf
+*.xml text
+*.md text
+*.txt text
+*.csv text
+*.reddlc binary
+*.bundle binary
+*.store binary
+*.w3strings binary
