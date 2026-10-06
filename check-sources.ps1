@@ -102,7 +102,7 @@ foreach ($t in $trophies) {
     }
     if (-not $stat) { Fail "$($t.Name) has no stat ability at all" }
 }
-foreach ($n in $ourAbilities.Keys) { if ($n -ne 'zmora_trophy_stats' -and -not $vanillaAbilityNames.ContainsKey($n)) { Fail "mod ability '$n' overrides nothing in vanilla" } }
+foreach ($n in $ourAbilities.Keys) { if ($n -ne 'zmora_trophy_stats' -and $n -notlike 'soth_fused_*' -and -not $vanillaAbilityNames.ContainsKey($n)) { Fail "mod ability '$n' overrides nothing in vanilla" } }
 
 # ---------------------------------------------------------------- 4. value sanity
 "`n[4] values"
@@ -159,6 +159,8 @@ Pass "$($ourAbilities.Count) abilities carry the SpoilsOfTheHunt tag"
 $flavour = Import-PowerShellDataFile (Join-Path $root 'trophy-text.psd1')
 $descByItem = @{}
 foreach ($p in $flavour.Descriptions) { if ($descByItem.ContainsKey($p[0])) { Fail "duplicate flavour text entry $($p[0])" }; $descByItem[$p[0]] = $p[1] }
+$nameByItem = @{}
+foreach ($p in $flavour.Names) { if ($nameByItem.ContainsKey($p[0])) { Fail "duplicate name override $($p[0])" }; $nameByItem[$p[0]] = $p[1] }
 $ourItems = @{}
 foreach ($it in $ours.redxml.definitions.items.item) { $ourItems[$it.name.Trim()] = $it }
 $vanillaItems = @{}
@@ -186,6 +188,10 @@ foreach ($name in ($vanillaItems.Keys | Sort-Object)) {
         if ($o.GetAttribute('on_conflict') -ne 'replace') { Fail "$name redefinition lacks on_conflict=`"replace`"" }
         foreach ($attr in $v.Attributes) {
             if ($attr.Name -eq 'localisation_key_description' -and $generic) { continue }
+            if ($attr.Name -eq 'localisation_key_name' -and $nameByItem.ContainsKey($name)) {
+                if ($o.GetAttribute('localisation_key_name').Trim() -ne "item_name_soth_$name" -or -not $ourKeys.Contains((KeyHash "item_name_soth_$name"))) { Fail "${name}: renamed, but key or string is wrong" } else { Pass "${name}: renamed to '$($nameByItem[$name])'" }
+                continue
+            }
             if ($o.GetAttribute($attr.Name).Trim() -ne $attr.Value.Trim()) { Fail "$name attribute '$($attr.Name)' differs from vanilla" }
         }
         if (("$($o.tags)" -replace '\s', '') -ne ("$($v.tags)" -replace '\s', '')) { Fail "$name tags differ from vanilla" }
@@ -195,6 +201,87 @@ foreach ($name in ($vanillaItems.Keys | Sort-Object)) {
     }
 }
 foreach ($n in $descByItem.Keys) { if (-not $vanillaItems.ContainsKey($n)) { Fail "flavour text for unknown item '$n'" } }
+
+# ---------------------------------------------------------------- 9. trophy fusion
+"`n[9] trophy fusion"
+$fusion = Import-PowerShellDataFile (Join-Path $root 'fusion-table.psd1')
+$fusionRow = @{}; foreach ($t in $fusion.Trophies) { if ($fusionRow.ContainsKey($t.Item)) { Fail "fusion table lists $($t.Item) twice" }; $fusionRow[$t.Item] = $t }
+foreach ($n in $vanillaItems.Keys) { if (-not $fusionRow.ContainsKey($n) -and $n -ne 'q602_pig_contest_trophy') { Fail "fusion table has no class for $n" } }
+# vanilla mutagen ingredients (name -> colour), for binder validation
+$mutagenColour = @{}
+foreach ($f in 'gameplay\items\def_item_ingredients.xml', 'dlc\bob\data\gameplay\items\def_item_ingredients.xml') {
+    [xml]$doc = [regex]::Replace([System.IO.File]::ReadAllText((Join-Path $van $f)), '(?s)<!--.*?-->', '')
+    foreach ($it in $doc.redxml.definitions.items.item) {
+        if (("$($it.tags)" -replace '\s', '') -notmatch 'MutagenIngredient') { continue }
+        $col = @($it.base_abilities.a | ForEach-Object { "$_".Trim() } | Where-Object { $_ -match 'mutagen_color_(red|green|blue)' } | ForEach-Object { $Matches[1] })[0]
+        $mutagenColour[$it.name.Trim()] = $col
+    }
+}
+foreach ($t in $fusion.Trophies) {
+    if ($t.Mutagen -and -not $mutagenColour.ContainsKey($t.Mutagen)) { Fail "$($t.Item): binder '$($t.Mutagen)' is not a vanilla mutagen ingredient" }
+    elseif ($t.Mutagen -and $mutagenColour[$t.Mutagen] -ne $t.Colour) { Fail "$($t.Item): colour '$($t.Colour)' does not match its mutagen's colour '$($mutagenColour[$t.Mutagen])'" }
+}
+foreach ($c in 'red', 'green', 'blue') { $g = $fusion.GenericMutagens[$c]; if ($mutagenColour[$g] -ne $c) { Fail "generic binder '$g' is not a vanilla $c mutagen" } }
+$fusedItems = @($ours.redxml.definitions.items.item | Where-Object { $_.name.Trim() -like 'soth_fused_*' })
+$recipes = @($ours.redxml.custom.alchemy_recipes.recipe)
+$recipeNames = @{}; foreach ($r in $recipes) { if ($recipeNames.ContainsKey($r.name_name)) { Fail "duplicate recipe $($r.name_name)" }; $recipeNames[$r.name_name] = $r }
+$fusionScript = Get-Content (Join-Path $root 'src\scripts\local\modSpoilsOfTheHunt_fusion.ws') -Raw
+$classAttrOf = { param($token) if ($token -eq 'Troll') { 'vsOgre_attack_power' } else { "vs${token}_attack_power" } }
+$expectedPairs = 0
+$byClass = @{}; foreach ($t in $fusion.Trophies) { if (-not $byClass.ContainsKey($t.Class)) { $byClass[$t.Class] = @() }; $byClass[$t.Class] += @($t) }
+foreach ($class in $byClass.Keys) { $n = $byClass[$class].Count; $expectedPairs += $n * ($n - 1) / 2 }
+if ($fusedItems.Count -ne $expectedPairs) { Fail "expected $expectedPairs fused items (one per same-class pair), found $($fusedItems.Count)" } else { Pass "$expectedPairs fused items, one per same-class pair" }
+foreach ($fi in $fusedItems) {
+    $iname = $fi.name.Trim()
+    $ab = @($fi.base_abilities.a | ForEach-Object { "$_".Trim() })
+    $statsName = $ab | Where-Object { $_ -ne 'base_trophy_stats' }
+    if ($ab.Count -ne 2 -or -not $ourAbilities.ContainsKey($statsName)) { Fail "${iname}: abilities should be its fused stats + base_trophy_stats"; continue }
+    $its = @($recipes | Where-Object { $_.cookedItem_name -eq $iname })
+    if (-not $its) { Fail "$iname has no recipe"; continue }
+    # every recipe for this item names the same two trophies plus one binder
+    $ok = $true
+    foreach ($r in $its) {
+        $ing = @($r.ingredients.ingredient | ForEach-Object { $_.item_name })
+        if ($ing.Count -ne 3) { Fail "$($r.name_name): expected 3 ingredients"; $ok = $false; continue }
+        $a = $fusionRow[$ing[0]]; $b = $fusionRow[$ing[1]]
+        if (-not $a -or -not $b) { Fail "$($r.name_name): ingredient trophies not in the fusion table"; $ok = $false; continue }
+        if ($a.Class -ne $b.Class) { Fail "$($r.name_name): $($a.Item) ($($a.Class)) and $($b.Item) ($($b.Class)) are not the same class"; $ok = $false }
+        $binder = $ing[2]
+        $allowed = @($a.Mutagen, $b.Mutagen, $fusion.GenericMutagens[$a.Colour], $fusion.GenericMutagens[$b.Colour]) | Where-Object { $_ }
+        if ($binder -notin $allowed) { Fail "$($r.name_name): binder '$binder' is not allowed for this pair"; $ok = $false }
+        # "trophy" is not a vanilla type: the loader maps it to EACIT_Undefined, whose group name and label our
+        # alchemygroup script replaces with the Trophies group
+        if ($r.cookedItemType -ne 'trophy') { Fail "$($r.name_name): cookedItemType must be trophy (the Trophies group)"; $ok = $false }
+        if ($fusionScript -notmatch "itemA\.PushBack\('$([regex]::Escape($ing[0]))'\); itemB\.PushBack\('$([regex]::Escape($ing[1]))'\); recipe\.PushBack\('$([regex]::Escape($r.name_name))'\);") { Fail "$($r.name_name) is missing from the recipe-teaching script"; $ok = $false }
+        # the class line follows the rule: 5% + the better of the two (trait-only = 5%), capped at 20%
+        $classAttr = & $classAttrOf $a.Class
+        $statsA = @($vanillaItems[$a.Item].base_abilities.a | ForEach-Object { "$_".Trim() } | Where-Object { $_ -ne 'base_trophy_stats' })[0]
+        if ($a.Item -eq 'mq7017_zmora_trophy') { $statsA = 'zmora_trophy_stats' }
+        $statsB = @($vanillaItems[$b.Item].base_abilities.a | ForEach-Object { "$_".Trim() } | Where-Object { $_ -ne 'base_trophy_stats' })[0]
+        if ($b.Item -eq 'mq7017_zmora_trophy') { $statsB = 'zmora_trophy_stats' }
+        $srcA = $ourAbilities[$statsA]; $srcB = $ourAbilities[$statsB]
+        # class line only when a source has one: 5% + the better of the two, capped at 20%; else none
+        $la = [double](($srcA | Where-Object { $_.Name -eq $classAttr }).Min + 0)
+        $lb = [double](($srcB | Where-Object { $_.Name -eq $classAttr }).Min + 0)
+        $want = if ($la -gt 0 -or $lb -gt 0) { [Math]::Min(0.20, [Math]::Round(0.05 + [Math]::Max($la, $lb), 2)) } else { 0 }
+        $got = [double](($ourAbilities[$statsName] | Where-Object { $_.Name -eq $classAttr }).Min + 0)
+        if ($got -ne $want) { Fail "${iname}: class line $got, rule says $want"; $ok = $false }
+        $sourceAttrs = @($srcA | ForEach-Object { $_.Name }) + @($srcB | ForEach-Object { $_.Name })
+        foreach ($attr in $ourAbilities[$statsName]) { if ($attr.Name -ne $classAttr -and $attr.Name -notin $sourceAttrs) { Fail "${iname}: bonus $($attr.Name) comes from neither source trophy"; $ok = $false } }
+        foreach ($attr in $ourAbilities[$statsName]) { if ($attr.Name -ne $classAttr -and [double]$attr.Min -gt 0.20) { Fail "${iname}: trait $($attr.Name) = $($attr.Min) exceeds 0.20"; $ok = $false } }
+        if (($fi.localisation_key_name.Trim() -ne "item_name_soth_fused_$($a.Class.ToLower())") -or -not $ourKeys.Contains((KeyHash $fi.localisation_key_name.Trim())) -or -not $ourKeys.Contains((KeyHash $fi.localisation_key_description.Trim()))) { Fail "${iname}: class name/description strings missing"; $ok = $false }
+        if ($fi.equip_template.Trim() -ne $vanillaItems[$a.Item].equip_template.Trim()) { Fail "${iname}: should hang the first trophy's mesh"; $ok = $false }
+    }
+    if ($ok) { Pass "${iname}: $($its.Count) recipes, class line $got" }
+}
+$groupScript = Get-Content (Join-Path $root 'src\scripts\local\modSpoilsOfTheHunt_alchemygroup.ws') -Raw
+if ($groupScript -match "@replaceMethod\s*\n\s*function AlchemyCookedItemTypeEnumToName" -and $groupScript -match "default\s*:\s*return 'trophy';" -and
+    $groupScript -match "@replaceMethod\s*\n\s*function AlchemyCookedItemTypeToLocKey" -and $groupScript -match 'default\s*:\s*return "panel_alchemy_tab_trophies";' -and
+    $ourKeys.Contains((KeyHash 'panel_alchemy_tab_trophies'))) { Pass 'Trophies group: both type-mapping functions replaced and the label string exists' }
+else { Fail 'Trophies group: alchemygroup script or its label string is wrong'
+
+}
+Pass "$($recipes.Count) fusion recipes checked"
 
 # ---------------------------------------------------------------- summary
 "`n$passes checks passed, $($fails.Count) failed"

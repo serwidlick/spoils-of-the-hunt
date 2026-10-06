@@ -22,6 +22,14 @@ $strings = @(
 # Per-trophy flavour text (ids follow in file order; append-only, see trophy-text.psd1).
 $flavour = Import-PowerShellDataFile (Join-Path $PSScriptRoot 'trophy-text.psd1')
 foreach ($pair in $flavour.Descriptions) { $strings += ,@("item_desc_soth_$($pair[0])", $pair[1]) }
+# Fused trophies are named and described per class (fusion-table.psd1); sorted so ids stay stable as classes are added.
+$fusion = Import-PowerShellDataFile (Join-Path $PSScriptRoot 'fusion-table.psd1')
+foreach ($class in ($fusion.Classes.Keys | Sort-Object)) {
+    $strings += ,@("item_name_soth_fused_$($class.ToLower())", $fusion.Classes[$class].Name)
+    $strings += ,@("item_desc_soth_fused_$($class.ToLower())", $fusion.Classes[$class].Desc)
+}
+$strings += ,@('panel_alchemy_tab_trophies', 'Trophies')   # the fusion group in the alchemy panel
+foreach ($pair in $flavour.Names) { $strings += ,@("item_name_soth_$($pair[0])", $pair[1]) }   # distinct names for vanilla duplicates
 # English text is shipped for every language the game supports, so no language sees raw #keys.
 $languages = 'en','ar','br','cn','cz','de','es','esmx','fr','hu','it','jp','kr','pl','ru','tr','ua','zh'
 

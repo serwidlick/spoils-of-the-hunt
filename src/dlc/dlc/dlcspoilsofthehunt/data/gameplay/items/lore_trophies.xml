@@ -179,10 +179,336 @@
 				<tags>SpoilsOfTheHunt</tags>
 				<vsVampire_attack_power type="mult" min="0.15"/>
 			</ability>
+			<ability name="soth_fused_q002_griffin__sq108_griffin_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_q002_griffin__mq7009_griffin_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_q002_griffin__mh301_gryphon_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.20"/>
+			</ability>
+			<ability name="soth_fused_q002_griffin__mh210_lamia_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_q002_griffin__mh303_succubus_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.15"/>
+				<spell_power_axii type="mult" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_sq108_griffin__mq7009_griffin_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_sq108_griffin__mh301_gryphon_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.20"/>
+			</ability>
+			<ability name="soth_fused_sq108_griffin__mh210_lamia_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_sq108_griffin__mh303_succubus_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.15"/>
+				<spell_power_axii type="mult" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mq7009_griffin__mh301_gryphon_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.20"/>
+			</ability>
+			<ability name="soth_fused_mq7009_griffin__mh210_lamia_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mq7009_griffin__mh303_succubus_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.15"/>
+				<spell_power_axii type="mult" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh301_gryphon__mh210_lamia_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.20"/>
+			</ability>
+			<ability name="soth_fused_mh301_gryphon__mh303_succubus_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.20"/>
+				<spell_power_axii type="mult" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh210_lamia__mh303_succubus_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsHybrid_attack_power type="mult" min="0.10"/>
+				<spell_power_axii type="mult" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh101_cockatrice__mh105_wyvern_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh101_cockatrice__mq1051_wyvern_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh101_cockatrice__mh208_forktail_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<poison_resistance_perc type="add" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh101_cockatrice__mq7018_basilisk_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<poison_resistance_perc type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh101_cockatrice__mq7010_dracolizard_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<fire_resistance_perc type="add" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh105_wyvern__mq1051_wyvern_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh105_wyvern__mh208_forktail_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<poison_resistance_perc type="add" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh105_wyvern__mq7018_basilisk_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<poison_resistance_perc type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh105_wyvern__mq7010_dracolizard_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<fire_resistance_perc type="add" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mq1051_wyvern__mh208_forktail_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<poison_resistance_perc type="add" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mq1051_wyvern__mq7018_basilisk_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<poison_resistance_perc type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mq1051_wyvern__mq7010_dracolizard_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<fire_resistance_perc type="add" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh208_forktail__mq7018_basilisk_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<poison_resistance_perc type="add" min="0.20"/>
+			</ability>
+			<ability name="soth_fused_mh208_forktail__mq7010_dracolizard_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<poison_resistance_perc type="add" min="0.15"/>
+				<fire_resistance_perc type="add" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mq7018_basilisk__mq7010_dracolizard_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsDraconide_attack_power type="mult" min="0.15"/>
+				<poison_resistance_perc type="add" min="0.10"/>
+				<fire_resistance_perc type="add" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh204_leshy__mh302_leshy_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh204_leshy__mh206_fiend_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh204_leshy__mh107_czart_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+				<bludgeoning_resistance_perc type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh204_leshy__mq7002_spriggan_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh204_leshy__mh305_doppler_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+				<bonus_money type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh302_leshy__mh206_fiend_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh302_leshy__mh107_czart_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+				<bludgeoning_resistance_perc type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh302_leshy__mq7002_spriggan_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh302_leshy__mh305_doppler_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+				<bonus_money type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh206_fiend__mh107_czart_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+				<bludgeoning_resistance_perc type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh206_fiend__mq7002_spriggan_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh206_fiend__mh305_doppler_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+				<bonus_money type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh107_czart__mq7002_spriggan_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+				<bludgeoning_resistance_perc type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh107_czart__mh305_doppler_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<bludgeoning_resistance_perc type="add" min="0.10"/>
+				<bonus_money type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mq7002_spriggan__mh305_doppler_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsRelic_attack_power type="mult" min="0.15"/>
+				<bonus_money type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh207_wraith__mh103_nightwraith_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+				<spell_power_yrden type="mult" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh207_wraith__mh308_noonwraith_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh207_wraith__mq0003_noonwraith_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh207_wraith__mq7017_zmora_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh103_nightwraith__mh308_noonwraith_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+				<spell_power_yrden type="mult" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh103_nightwraith__mq0003_noonwraith_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+				<spell_power_yrden type="mult" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh103_nightwraith__mq7017_zmora_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+				<spell_power_yrden type="mult" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh308_noonwraith__mq0003_noonwraith_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh308_noonwraith__mq7017_zmora_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mq0003_noonwraith__mq7017_zmora_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsSpecter_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh104_ekimma__mh304_katakan_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsVampire_attack_power type="mult" min="0.15"/>
+				<critical_hit_chance type="add" min="0.05"/>
+			</ability>
+			<ability name="soth_fused_mh104_ekimma__q704_garkain_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsVampire_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh104_ekimma__camm_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsVampire_attack_power type="mult" min="0.20"/>
+			</ability>
+			<ability name="soth_fused_mh304_katakan__q704_garkain_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsVampire_attack_power type="mult" min="0.15"/>
+				<critical_hit_chance type="add" min="0.05"/>
+			</ability>
+			<ability name="soth_fused_mh304_katakan__camm_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsVampire_attack_power type="mult" min="0.20"/>
+				<critical_hit_chance type="add" min="0.05"/>
+			</ability>
+			<ability name="soth_fused_q704_garkain__camm_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsVampire_attack_power type="mult" min="0.20"/>
+			</ability>
+			<ability name="soth_fused_mh106_gravehag__mh108_fogling_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsNecrophage_attack_power type="mult" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_mh106_gravehag__mh203_water_hag_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsNecrophage_attack_power type="mult" min="0.15"/>
+				<poison_resistance_perc type="add" min="0.05"/>
+			</ability>
+			<ability name="soth_fused_mh108_fogling__mh203_water_hag_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsNecrophage_attack_power type="mult" min="0.10"/>
+				<poison_resistance_perc type="add" min="0.05"/>
+			</ability>
+			<ability name="soth_fused_mh201_cave_troll__mh202_nekker_warrior_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsOgre_attack_power type="mult" min="0.10"/>
+				<bludgeoning_resistance_perc type="add" min="0.05"/>
+			</ability>
+			<ability name="soth_fused_mh201_cave_troll__q701_cyclops_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsOgre_attack_power type="mult" min="0.15"/>
+				<bludgeoning_resistance_perc type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh202_nekker_warrior__q701_cyclops_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<vsOgre_attack_power type="mult" min="0.15"/>
+				<bludgeoning_resistance_perc type="add" min="0.05"/>
+			</ability>
+			<ability name="soth_fused_mh102_arachas__q603_sharley_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<poison_resistance_perc type="add" min="0.15"/>
+				<bludgeoning_resistance_perc type="add" min="0.10"/>
+			</ability>
+			<ability name="soth_fused_mh102_arachas__mh701_sharley_matriarch_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<poison_resistance_perc type="add" min="0.15"/>
+				<bludgeoning_resistance_perc type="add" min="0.15"/>
+			</ability>
+			<ability name="soth_fused_q603_sharley__mh701_sharley_matriarch_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<bludgeoning_resistance_perc type="add" min="0.20"/>
+			</ability>
+			<ability name="soth_fused_mh306_dao__mh307_minion_stats">
+				<tags>SpoilsOfTheHunt</tags>
+				<bludgeoning_resistance_perc type="add" min="0.15"/>
+				<frost_resistance_perc type="add" min="0.15"/>
+			</ability>
 		</abilities>
 		<items>
 			<item on_conflict="replace" name="q002_griffin_trophy" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size = "2"
-			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name = "item_name_q002_griffin_trophy" localisation_key_description="item_desc_soth_q002_griffin_trophy" price = "250" >
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_q002_griffin_trophy" localisation_key_description="item_desc_soth_q002_griffin_trophy" price = "250" >
 			<tags>Quest,Trophy,HorseTrophy</tags>
 			<base_abilities>
 			<a>gryphon_trophy_stats</a>
@@ -318,7 +644,7 @@
 			</base_abilities>
 			</item>
 			<item on_conflict="replace" name="mq1051_wyvern_trophy" category="trophy" stackable="1" equip_template="trophy__wyvern" ability_mode="OnMount" grid_size = "2"
-			icon_path="icons/inventory/quests/trophy_wyvern_64x64.png" localisation_key_name = "item_name_mq1051_wyvern_trophy" localisation_key_description="item_desc_soth_mq1051_wyvern_trophy" price = "300" >
+			icon_path="icons/inventory/quests/trophy_wyvern_64x64.png" localisation_key_name="item_name_soth_mq1051_wyvern_trophy" localisation_key_description="item_desc_soth_mq1051_wyvern_trophy" price = "300" >
 			<tags>Trophy</tags>
 			<base_abilities>
 			<a>wyvern_mq1051_trophy_stats</a>
@@ -326,7 +652,7 @@
 			</base_abilities>
 			</item>
 			<item on_conflict="replace" name="mh301_gryphon_trophy" category="trophy" stackable="1" equip_template="trophy__gryphon_mh" ability_mode="OnMount" grid_size = "2"
-			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name = "item_name_mh301_gryphon_trophy" localisation_key_description="item_desc_soth_mh301_gryphon_trophy" price = "300" >
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_mh301_gryphon_trophy" localisation_key_description="item_desc_soth_mh301_gryphon_trophy" price = "300" >
 			<tags>Quest,Trophy</tags>
 			<base_abilities>
 			<a>gryphon_mh301_trophy_stats</a>
@@ -334,7 +660,7 @@
 			</base_abilities>
 			</item>
 			<item on_conflict="replace" name="mh302_leshy_trophy" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size = "2"
-			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name = "item_name_mh302_leshy_trophy" localisation_key_description="item_desc_soth_mh302_leshy_trophy" price = "500" >
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_mh302_leshy_trophy" localisation_key_description="item_desc_soth_mh302_leshy_trophy" price = "500" >
 			<tags>Quest,Trophy</tags>
 			<base_abilities>
 			<a>leshy_mh302_trophy_stats</a>
@@ -398,7 +724,7 @@
 			</base_abilities>
 			</item>
 			<item on_conflict="replace" name="mq0003_noonwraith_trophy" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size = "2"
-			icon_path="icons/inventory/quests/trophy_noonwraith_64x64.png" localisation_key_name = "item_name_mq0003_noonwraith_trophy" localisation_key_description="item_desc_soth_mq0003_noonwraith_trophy" price = "250" >
+			icon_path="icons/inventory/quests/trophy_noonwraith_64x64.png" localisation_key_name="item_name_soth_mq0003_noonwraith_trophy" localisation_key_description="item_desc_soth_mq0003_noonwraith_trophy" price = "250" >
 			<tags>Quest,Trophy</tags>
 			<base_abilities>
 			<a>noonwraith_trophy_stats</a>
@@ -447,7 +773,7 @@
 			grid_size						= "2"
 			ability_mode					="OnMount"
 			equip_template					="trophy__gryphon"
-			localisation_key_name 			="item_name_q002_griffin_trophy"
+			localisation_key_name="item_name_soth_mq7009_griffin_trophy"
 			localisation_key_description="item_desc_soth_mq7009_griffin_trophy"
 			icon_path						="icons/inventory/quests/trophy_gryphon_64x64.png"
 			>
@@ -475,6 +801,2104 @@
 			<a>zmora_trophy_stats</a>
 			</base_abilities>
 			</item>
+			<item name="soth_fused_q002_griffin__sq108_griffin" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="500">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_q002_griffin__sq108_griffin_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_q002_griffin__mq7009_griffin" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="500">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_q002_griffin__mq7009_griffin_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_q002_griffin__mh301_gryphon" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="550">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_q002_griffin__mh301_gryphon_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_q002_griffin__mh210_lamia" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="300">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_q002_griffin__mh210_lamia_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_q002_griffin__mh303_succubus" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_q002_griffin__mh303_succubus_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_sq108_griffin__mq7009_griffin" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="500">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_sq108_griffin__mq7009_griffin_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_sq108_griffin__mh301_gryphon" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="550">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_sq108_griffin__mh301_gryphon_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_sq108_griffin__mh210_lamia" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="300">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_sq108_griffin__mh210_lamia_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_sq108_griffin__mh303_succubus" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_sq108_griffin__mh303_succubus_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mq7009_griffin__mh301_gryphon" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="550">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mq7009_griffin__mh301_gryphon_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mq7009_griffin__mh210_lamia" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="300">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mq7009_griffin__mh210_lamia_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mq7009_griffin__mh303_succubus" category="trophy" stackable="1" equip_template="trophy__gryphon" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mq7009_griffin__mh303_succubus_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh301_gryphon__mh210_lamia" category="trophy" stackable="1" equip_template="trophy__gryphon_mh" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="350">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh301_gryphon__mh210_lamia_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh301_gryphon__mh303_succubus" category="trophy" stackable="1" equip_template="trophy__gryphon_mh" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_gryphon_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="450">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh301_gryphon__mh303_succubus_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh210_lamia__mh303_succubus" category="trophy" stackable="1" equip_template="trophy__universal" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_syren_64x64.png" localisation_key_name="item_name_soth_fused_hybrid" localisation_key_description="item_desc_soth_fused_hybrid" price="200">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh210_lamia__mh303_succubus_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh101_cockatrice__mh105_wyvern" category="trophy" stackable="1" equip_template="trophy__cockatris" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_cockatris_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="450">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh101_cockatrice__mh105_wyvern_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh101_cockatrice__mq1051_wyvern" category="trophy" stackable="1" equip_template="trophy__cockatris" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_cockatris_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="450">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh101_cockatrice__mq1051_wyvern_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh101_cockatrice__mh208_forktail" category="trophy" stackable="1" equip_template="trophy__cockatris" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_cockatris_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="500">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh101_cockatrice__mh208_forktail_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh101_cockatrice__mq7018_basilisk" category="trophy" stackable="1" equip_template="trophy__cockatris" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_cockatris_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="300">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh101_cockatrice__mq7018_basilisk_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh101_cockatrice__mq7010_dracolizard" category="trophy" stackable="1" equip_template="trophy__cockatris" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_cockatris_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh101_cockatrice__mq7010_dracolizard_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh105_wyvern__mq1051_wyvern" category="trophy" stackable="1" equip_template="trophy__wyvern" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wyvern_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="600">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh105_wyvern__mq1051_wyvern_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh105_wyvern__mh208_forktail" category="trophy" stackable="1" equip_template="trophy__wyvern" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wyvern_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="650">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh105_wyvern__mh208_forktail_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh105_wyvern__mq7018_basilisk" category="trophy" stackable="1" equip_template="trophy__wyvern" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wyvern_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="450">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh105_wyvern__mq7018_basilisk_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh105_wyvern__mq7010_dracolizard" category="trophy" stackable="1" equip_template="trophy__wyvern" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wyvern_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="550">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh105_wyvern__mq7010_dracolizard_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mq1051_wyvern__mh208_forktail" category="trophy" stackable="1" equip_template="trophy__wyvern" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wyvern_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="650">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mq1051_wyvern__mh208_forktail_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mq1051_wyvern__mq7018_basilisk" category="trophy" stackable="1" equip_template="trophy__wyvern" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wyvern_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="450">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mq1051_wyvern__mq7018_basilisk_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mq1051_wyvern__mq7010_dracolizard" category="trophy" stackable="1" equip_template="trophy__wyvern" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wyvern_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="550">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mq1051_wyvern__mq7010_dracolizard_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh208_forktail__mq7018_basilisk" category="trophy" stackable="1" equip_template="trophy__forktail" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_forktail_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="500">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh208_forktail__mq7018_basilisk_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh208_forktail__mq7010_dracolizard" category="trophy" stackable="1" equip_template="trophy__forktail" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_forktail_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="600">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh208_forktail__mq7010_dracolizard_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mq7018_basilisk__mq7010_dracolizard" category="trophy" stackable="1" equip_template="basilisk_white_trophy" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/mq7018_basilisk_trophy_64x64.png" localisation_key_name="item_name_soth_fused_draconide" localisation_key_description="item_desc_soth_fused_draconide" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mq7018_basilisk__mq7010_dracolizard_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh204_leshy__mh302_leshy" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="1000">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh204_leshy__mh302_leshy_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh204_leshy__mh206_fiend" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="1000">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh204_leshy__mh206_fiend_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh204_leshy__mh107_czart" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="750">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh204_leshy__mh107_czart_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh204_leshy__mq7002_spriggan" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="750">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh204_leshy__mq7002_spriggan_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh204_leshy__mh305_doppler" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="650">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh204_leshy__mh305_doppler_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh302_leshy__mh206_fiend" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="1000">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh302_leshy__mh206_fiend_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh302_leshy__mh107_czart" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="750">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh302_leshy__mh107_czart_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh302_leshy__mq7002_spriggan" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="750">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh302_leshy__mq7002_spriggan_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh302_leshy__mh305_doppler" category="trophy" stackable="1" equip_template="trophy__lessun" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_lessun_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="650">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh302_leshy__mh305_doppler_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh206_fiend__mh107_czart" category="trophy" stackable="1" equip_template="trophy__bies" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_bies_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="750">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh206_fiend__mh107_czart_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh206_fiend__mq7002_spriggan" category="trophy" stackable="1" equip_template="trophy__bies" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_bies_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="750">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh206_fiend__mq7002_spriggan_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh206_fiend__mh305_doppler" category="trophy" stackable="1" equip_template="trophy__bies" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_bies_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="650">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh206_fiend__mh305_doppler_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh107_czart__mq7002_spriggan" category="trophy" stackable="1" equip_template="trophy__czart" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_czart_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="500">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh107_czart__mq7002_spriggan_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh107_czart__mh305_doppler" category="trophy" stackable="1" equip_template="trophy__czart" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_czart_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh107_czart__mh305_doppler_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mq7002_spriggan__mh305_doppler" category="trophy" stackable="1" equip_template="trophy_spriggan" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/mq7002_icon_spriggan_trophy_64x64.png" localisation_key_name="item_name_soth_fused_relic" localisation_key_description="item_desc_soth_fused_relic" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mq7002_spriggan__mh305_doppler_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh207_wraith__mh103_nightwraith" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="650">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh207_wraith__mh103_nightwraith_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh207_wraith__mh308_noonwraith" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="650">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh207_wraith__mh308_noonwraith_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh207_wraith__mq0003_noonwraith" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="600">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh207_wraith__mq0003_noonwraith_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh207_wraith__mq7017_zmora" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_wraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="600">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh207_wraith__mq7017_zmora_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh103_nightwraith__mh308_noonwraith" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_nightwraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="600">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh103_nightwraith__mh308_noonwraith_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh103_nightwraith__mq0003_noonwraith" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_nightwraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="550">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh103_nightwraith__mq0003_noonwraith_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh103_nightwraith__mq7017_zmora" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_nightwraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="550">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh103_nightwraith__mq7017_zmora_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh308_noonwraith__mq0003_noonwraith" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_noonwraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="550">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh308_noonwraith__mq0003_noonwraith_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh308_noonwraith__mq7017_zmora" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_noonwraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="550">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh308_noonwraith__mq7017_zmora_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mq0003_noonwraith__mq7017_zmora" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_noonwraith_64x64.png" localisation_key_name="item_name_soth_fused_specter" localisation_key_description="item_desc_soth_fused_specter" price="500">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mq0003_noonwraith__mq7017_zmora_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh104_ekimma__mh304_katakan" category="trophy" stackable="1" equip_template="trophy__ekima" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_ekima_64x64.png" localisation_key_name="item_name_soth_fused_vampire" localisation_key_description="item_desc_soth_fused_vampire" price="1000">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh104_ekimma__mh304_katakan_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh104_ekimma__q704_garkain" category="trophy" stackable="1" equip_template="trophy__ekima" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_ekima_64x64.png" localisation_key_name="item_name_soth_fused_vampire" localisation_key_description="item_desc_soth_fused_vampire" price="650">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh104_ekimma__q704_garkain_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh104_ekimma__camm" category="trophy" stackable="1" equip_template="trophy__ekima" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_ekima_64x64.png" localisation_key_name="item_name_soth_fused_vampire" localisation_key_description="item_desc_soth_fused_vampire" price="750">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh104_ekimma__camm_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh304_katakan__q704_garkain" category="trophy" stackable="1" equip_template="trophy__katakan" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_katakan_64x64.png" localisation_key_name="item_name_soth_fused_vampire" localisation_key_description="item_desc_soth_fused_vampire" price="650">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh304_katakan__q704_garkain_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh304_katakan__camm" category="trophy" stackable="1" equip_template="trophy__katakan" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_katakan_64x64.png" localisation_key_name="item_name_soth_fused_vampire" localisation_key_description="item_desc_soth_fused_vampire" price="750">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh304_katakan__camm_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_q704_garkain__camm" category="trophy" stackable="1" equip_template="garkain_mh_trophy" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/Alpha-garkain-trophy_64x64.png" localisation_key_name="item_name_soth_fused_vampire" localisation_key_description="item_desc_soth_fused_vampire" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_q704_garkain__camm_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh106_gravehag__mh108_fogling" category="trophy" stackable="1" equip_template="trophy__universal" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_grave_hag_64x64.png" localisation_key_name="item_name_soth_fused_necrophage" localisation_key_description="item_desc_soth_fused_necrophage" price="350">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh106_gravehag__mh108_fogling_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh106_gravehag__mh203_water_hag" category="trophy" stackable="1" equip_template="trophy__universal" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_grave_hag_64x64.png" localisation_key_name="item_name_soth_fused_necrophage" localisation_key_description="item_desc_soth_fused_necrophage" price="350">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh106_gravehag__mh203_water_hag_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh108_fogling__mh203_water_hag" category="trophy" stackable="1" equip_template="trophy__universal" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_fogling_64x64.png" localisation_key_name="item_name_soth_fused_necrophage" localisation_key_description="item_desc_soth_fused_necrophage" price="100">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh108_fogling__mh203_water_hag_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh201_cave_troll__mh202_nekker_warrior" category="trophy" stackable="1" equip_template="trophy__cave_troll" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_cave_troll_64x64.png" localisation_key_name="item_name_soth_fused_troll" localisation_key_description="item_desc_soth_fused_troll" price="130">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh201_cave_troll__mh202_nekker_warrior_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh201_cave_troll__q701_cyclops" category="trophy" stackable="1" equip_template="trophy__cave_troll" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_cave_troll_64x64.png" localisation_key_name="item_name_soth_fused_troll" localisation_key_description="item_desc_soth_fused_troll" price="350">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh201_cave_troll__q701_cyclops_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh202_nekker_warrior__q701_cyclops" category="trophy" stackable="1" equip_template="trophy__universal" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_nekker_64x64.png" localisation_key_name="item_name_soth_fused_troll" localisation_key_description="item_desc_soth_fused_troll" price="280">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh202_nekker_warrior__q701_cyclops_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh102_arachas__q603_sharley" category="trophy" stackable="1" equip_template="trophy__universal" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_arachas_64x64.png" localisation_key_name="item_name_soth_fused_insectoid" localisation_key_description="item_desc_soth_fused_insectoid" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh102_arachas__q603_sharley_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh102_arachas__mh701_sharley_matriarch" category="trophy" stackable="1" equip_template="trophy__universal" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_arachas_64x64.png" localisation_key_name="item_name_soth_fused_insectoid" localisation_key_description="item_desc_soth_fused_insectoid" price="500">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh102_arachas__mh701_sharley_matriarch_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_q603_sharley__mh701_sharley_matriarch" category="trophy" stackable="1" equip_template="trophy_sharley" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/q603_sharley_trophy_64x64.png" localisation_key_name="item_name_soth_fused_insectoid" localisation_key_description="item_desc_soth_fused_insectoid" price="400">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_q603_sharley__mh701_sharley_matriarch_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
+			<item name="soth_fused_mh306_dao__mh307_minion" category="trophy" stackable="1" equip_template="trophy__universal_clean" ability_mode="OnMount" grid_size="2"
+			icon_path="icons/inventory/quests/trophy_elemental_64x64.png" localisation_key_name="item_name_soth_fused_magicals" localisation_key_description="item_desc_soth_fused_magicals" price="1050">
+				<tags>Trophy,HorseTrophy,SpoilsOfTheHuntFused</tags>
+				<base_abilities>
+					<a>soth_fused_mh306_dao__mh307_minion_stats</a>
+					<a>base_trophy_stats</a>
+				</base_abilities>
+			</item>
 		</items>
 	</definitions>
+	<custom>
+		<alchemy_recipes>
+			<recipe name_name="soth_fuse_q002_griffin__sq108_griffin__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__sq108_griffin" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__sq108_griffin__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__sq108_griffin" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mq7009_griffin__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mq7009_griffin" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mq7009_griffin__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mq7009_griffin" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh301_gryphon__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh301_gryphon__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Volcanic Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh301_gryphon__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh301_gryphon__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh210_lamia__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh210_lamia__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Lamia mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh210_lamia__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh210_lamia__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh303_succubus__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh303_succubus__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Succubus mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh303_succubus__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q002_griffin__mh303_succubus__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q002_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q002_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mq7009_griffin__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mq7009_griffin" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mq7009_griffin__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mq7009_griffin" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh301_gryphon__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh301_gryphon__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Volcanic Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh301_gryphon__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh301_gryphon__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh210_lamia__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh210_lamia__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Lamia mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh210_lamia__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh210_lamia__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh303_succubus__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh303_succubus__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Succubus mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh303_succubus__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_sq108_griffin__mh303_succubus__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_sq108_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="sq108_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh301_gryphon__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh301_gryphon__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Volcanic Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh301_gryphon__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh301_gryphon__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh301_gryphon" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh210_lamia__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh210_lamia__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Lamia mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh210_lamia__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh210_lamia__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh303_succubus__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh303_succubus__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Succubus mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh303_succubus__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7009_griffin__mh303_succubus__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7009_griffin__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7009_griffin_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh301_gryphon__mh210_lamia__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh301_gryphon__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Volcanic Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh301_gryphon__mh210_lamia__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh301_gryphon__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Lamia mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh301_gryphon__mh210_lamia__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh301_gryphon__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh301_gryphon__mh210_lamia__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh301_gryphon__mh210_lamia" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh301_gryphon__mh303_succubus__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh301_gryphon__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Volcanic Gryphon mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh301_gryphon__mh303_succubus__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh301_gryphon__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Succubus mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh301_gryphon__mh303_succubus__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh301_gryphon__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh301_gryphon_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh210_lamia__mh303_succubus__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh210_lamia__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Lamia mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh210_lamia__mh303_succubus__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh210_lamia__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Succubus mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh210_lamia__mh303_succubus__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh210_lamia__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh210_lamia__mh303_succubus__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh210_lamia__mh303_succubus" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh210_lamia_trophy" quantity="1"/>
+					<ingredient item_name="mh303_succubus_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mh105_wyvern__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mh105_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Cockatrice mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mh105_wyvern__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mh105_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Wyvern mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mh105_wyvern__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mh105_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mh105_wyvern__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mh105_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq1051_wyvern__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq1051_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Cockatrice mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq1051_wyvern__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq1051_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Wyvern mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq1051_wyvern__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq1051_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq1051_wyvern__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq1051_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mh208_forktail__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Cockatrice mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mh208_forktail__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Forktail mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mh208_forktail__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq7018_basilisk__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Cockatrice mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq7018_basilisk__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Basilisk mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq7018_basilisk__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq7010_dracolizard__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Cockatrice mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq7010_dracolizard__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh101_cockatrice__mq7010_dracolizard__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh101_cockatrice__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh101_cockatrice_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mq1051_wyvern__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mq1051_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Wyvern mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mq1051_wyvern__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mq1051_wyvern" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mh208_forktail__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Wyvern mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mh208_forktail__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Forktail mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mh208_forktail__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mh208_forktail__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mq7018_basilisk__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Wyvern mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mq7018_basilisk__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Basilisk mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mq7018_basilisk__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mq7018_basilisk__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mq7010_dracolizard__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Wyvern mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh105_wyvern__mq7010_dracolizard__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh105_wyvern__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh105_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mh208_forktail__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Wyvern mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mh208_forktail__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Forktail mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mh208_forktail__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mh208_forktail__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mh208_forktail" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mq7018_basilisk__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Wyvern mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mq7018_basilisk__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Basilisk mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mq7018_basilisk__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mq7018_basilisk__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mq7010_dracolizard__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Wyvern mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq1051_wyvern__mq7010_dracolizard__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq1051_wyvern__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq1051_wyvern_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh208_forktail__mq7018_basilisk__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh208_forktail__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Forktail mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh208_forktail__mq7018_basilisk__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh208_forktail__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Basilisk mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh208_forktail__mq7018_basilisk__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh208_forktail__mq7018_basilisk" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh208_forktail__mq7010_dracolizard__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh208_forktail__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Forktail mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh208_forktail__mq7010_dracolizard__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh208_forktail__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh208_forktail__mq7010_dracolizard__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh208_forktail__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh208_forktail_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7018_basilisk__mq7010_dracolizard__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7018_basilisk__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Basilisk mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7018_basilisk__mq7010_dracolizard__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7018_basilisk__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7018_basilisk__mq7010_dracolizard__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7018_basilisk__mq7010_dracolizard" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7018_basilisk_trophy" quantity="1"/>
+					<ingredient item_name="mq7010_dracolizard_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh302_leshy__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh302_leshy" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh302_leshy__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh302_leshy" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="Ancient Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh302_leshy__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh302_leshy" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh206_fiend__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh206_fiend" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh206_fiend__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh206_fiend" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="Fiend mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh206_fiend__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh206_fiend" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh206_fiend__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh206_fiend" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh107_czart__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh107_czart__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Czart mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh107_czart__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mq7002_spriggan__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mq7002_spriggan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mq7002_spriggan__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mq7002_spriggan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh305_doppler__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh305_doppler__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Doppler mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh305_doppler__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh204_leshy__mh305_doppler__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh204_leshy__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh204_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh206_fiend__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh206_fiend" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="Ancient Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh206_fiend__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh206_fiend" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="Fiend mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh206_fiend__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh206_fiend" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh206_fiend__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh206_fiend" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh107_czart__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Ancient Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh107_czart__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Czart mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh107_czart__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mq7002_spriggan__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mq7002_spriggan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="Ancient Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mq7002_spriggan__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mq7002_spriggan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh305_doppler__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Ancient Leshy mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh305_doppler__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Doppler mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh305_doppler__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh302_leshy__mh305_doppler__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh302_leshy__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh302_leshy_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mh107_czart__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Fiend mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mh107_czart__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Czart mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mh107_czart__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mh107_czart__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mh107_czart" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mq7002_spriggan__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mq7002_spriggan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="Fiend mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mq7002_spriggan__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mq7002_spriggan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mq7002_spriggan__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mq7002_spriggan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mh305_doppler__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Fiend mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mh305_doppler__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Doppler mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mh305_doppler__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh206_fiend__mh305_doppler__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh206_fiend__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh206_fiend_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh107_czart__mq7002_spriggan__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh107_czart__mq7002_spriggan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="Czart mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh107_czart__mq7002_spriggan__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh107_czart__mq7002_spriggan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh107_czart__mh305_doppler__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh107_czart__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Czart mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh107_czart__mh305_doppler__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh107_czart__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Doppler mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh107_czart__mh305_doppler__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh107_czart__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh107_czart__mh305_doppler__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh107_czart__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh107_czart_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7002_spriggan__mh305_doppler__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7002_spriggan__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Doppler mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7002_spriggan__mh305_doppler__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7002_spriggan__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq7002_spriggan__mh305_doppler__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq7002_spriggan__mh305_doppler" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq7002_spriggan_trophy" quantity="1"/>
+					<ingredient item_name="mh305_doppler_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mh103_nightwraith__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mh103_nightwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="Wraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mh103_nightwraith__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mh103_nightwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="Nightwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mh103_nightwraith__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mh103_nightwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mh308_noonwraith__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mh308_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Wraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mh308_noonwraith__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mh308_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Noonwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mh308_noonwraith__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mh308_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mq0003_noonwraith__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mq0003_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Wraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mq0003_noonwraith__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mq0003_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Noonwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mq0003_noonwraith__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mq0003_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mq7017_zmora__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mq7017_zmora" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mq7017_zmora_trophy" quantity="1"/>
+					<ingredient item_name="Wraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh207_wraith__mq7017_zmora__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh207_wraith__mq7017_zmora" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh207_wraith_trophy" quantity="1"/>
+					<ingredient item_name="mq7017_zmora_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh103_nightwraith__mh308_noonwraith__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh103_nightwraith__mh308_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Nightwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh103_nightwraith__mh308_noonwraith__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh103_nightwraith__mh308_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Noonwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh103_nightwraith__mh308_noonwraith__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh103_nightwraith__mh308_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh103_nightwraith__mq0003_noonwraith__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh103_nightwraith__mq0003_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Nightwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh103_nightwraith__mq0003_noonwraith__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh103_nightwraith__mq0003_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Noonwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh103_nightwraith__mq0003_noonwraith__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh103_nightwraith__mq0003_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh103_nightwraith__mq7017_zmora__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh103_nightwraith__mq7017_zmora" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq7017_zmora_trophy" quantity="1"/>
+					<ingredient item_name="Nightwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh103_nightwraith__mq7017_zmora__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh103_nightwraith__mq7017_zmora" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh103_nightwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq7017_zmora_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh308_noonwraith__mq0003_noonwraith__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh308_noonwraith__mq0003_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Noonwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh308_noonwraith__mq0003_noonwraith__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh308_noonwraith__mq0003_noonwraith" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh308_noonwraith__mq7017_zmora__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh308_noonwraith__mq7017_zmora" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq7017_zmora_trophy" quantity="1"/>
+					<ingredient item_name="Noonwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh308_noonwraith__mq7017_zmora__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh308_noonwraith__mq7017_zmora" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh308_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq7017_zmora_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq0003_noonwraith__mq7017_zmora__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq0003_noonwraith__mq7017_zmora" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq7017_zmora_trophy" quantity="1"/>
+					<ingredient item_name="Noonwraith mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mq0003_noonwraith__mq7017_zmora__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mq0003_noonwraith__mq7017_zmora" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mq0003_noonwraith_trophy" quantity="1"/>
+					<ingredient item_name="mq7017_zmora_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__mh304_katakan__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__mh304_katakan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="mh304_katakan_trophy" quantity="1"/>
+					<ingredient item_name="Ekimma mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__mh304_katakan__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__mh304_katakan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="mh304_katakan_trophy" quantity="1"/>
+					<ingredient item_name="Katakan mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__mh304_katakan__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__mh304_katakan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="mh304_katakan_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__mh304_katakan__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__mh304_katakan" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="mh304_katakan_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__q704_garkain__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__q704_garkain" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="q704_garkain_trophy" quantity="1"/>
+					<ingredient item_name="Ekimma mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__q704_garkain__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__q704_garkain" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="q704_garkain_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__q704_garkain__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__q704_garkain" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="q704_garkain_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__camm__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__camm" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="camm_trophy" quantity="1"/>
+					<ingredient item_name="Ekimma mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__camm__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__camm" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="camm_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh104_ekimma__camm__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh104_ekimma__camm" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh104_ekimma_trophy" quantity="1"/>
+					<ingredient item_name="camm_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh304_katakan__q704_garkain__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh304_katakan__q704_garkain" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh304_katakan_trophy" quantity="1"/>
+					<ingredient item_name="q704_garkain_trophy" quantity="1"/>
+					<ingredient item_name="Katakan mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh304_katakan__q704_garkain__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh304_katakan__q704_garkain" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh304_katakan_trophy" quantity="1"/>
+					<ingredient item_name="q704_garkain_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh304_katakan__camm__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh304_katakan__camm" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh304_katakan_trophy" quantity="1"/>
+					<ingredient item_name="camm_trophy" quantity="1"/>
+					<ingredient item_name="Katakan mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh304_katakan__camm__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh304_katakan__camm" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh304_katakan_trophy" quantity="1"/>
+					<ingredient item_name="camm_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q704_garkain__camm__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q704_garkain__camm" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q704_garkain_trophy" quantity="1"/>
+					<ingredient item_name="camm_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh106_gravehag__mh108_fogling__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh106_gravehag__mh108_fogling" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh106_gravehag_trophy" quantity="1"/>
+					<ingredient item_name="mh108_fogling_trophy" quantity="1"/>
+					<ingredient item_name="Grave Hag mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh106_gravehag__mh108_fogling__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh106_gravehag__mh108_fogling" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh106_gravehag_trophy" quantity="1"/>
+					<ingredient item_name="mh108_fogling_trophy" quantity="1"/>
+					<ingredient item_name="Fogling 1 mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh106_gravehag__mh108_fogling__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh106_gravehag__mh108_fogling" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh106_gravehag_trophy" quantity="1"/>
+					<ingredient item_name="mh108_fogling_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh106_gravehag__mh108_fogling__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh106_gravehag__mh108_fogling" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh106_gravehag_trophy" quantity="1"/>
+					<ingredient item_name="mh108_fogling_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh106_gravehag__mh203_water_hag__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh106_gravehag__mh203_water_hag" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh106_gravehag_trophy" quantity="1"/>
+					<ingredient item_name="mh203_water_hag_trophy" quantity="1"/>
+					<ingredient item_name="Grave Hag mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh106_gravehag__mh203_water_hag__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh106_gravehag__mh203_water_hag" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh106_gravehag_trophy" quantity="1"/>
+					<ingredient item_name="mh203_water_hag_trophy" quantity="1"/>
+					<ingredient item_name="Water Hag mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh106_gravehag__mh203_water_hag__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh106_gravehag__mh203_water_hag" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh106_gravehag_trophy" quantity="1"/>
+					<ingredient item_name="mh203_water_hag_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh106_gravehag__mh203_water_hag__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh106_gravehag__mh203_water_hag" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh106_gravehag_trophy" quantity="1"/>
+					<ingredient item_name="mh203_water_hag_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh108_fogling__mh203_water_hag__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh108_fogling__mh203_water_hag" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh108_fogling_trophy" quantity="1"/>
+					<ingredient item_name="mh203_water_hag_trophy" quantity="1"/>
+					<ingredient item_name="Fogling 1 mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh108_fogling__mh203_water_hag__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh108_fogling__mh203_water_hag" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh108_fogling_trophy" quantity="1"/>
+					<ingredient item_name="mh203_water_hag_trophy" quantity="1"/>
+					<ingredient item_name="Water Hag mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh108_fogling__mh203_water_hag__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh108_fogling__mh203_water_hag" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh108_fogling_trophy" quantity="1"/>
+					<ingredient item_name="mh203_water_hag_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh108_fogling__mh203_water_hag__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh108_fogling__mh203_water_hag" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh108_fogling_trophy" quantity="1"/>
+					<ingredient item_name="mh203_water_hag_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh201_cave_troll__mh202_nekker_warrior__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh201_cave_troll__mh202_nekker_warrior" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh201_cave_troll_trophy" quantity="1"/>
+					<ingredient item_name="mh202_nekker_warrior_trophy" quantity="1"/>
+					<ingredient item_name="Troll mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh201_cave_troll__mh202_nekker_warrior__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh201_cave_troll__mh202_nekker_warrior" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh201_cave_troll_trophy" quantity="1"/>
+					<ingredient item_name="mh202_nekker_warrior_trophy" quantity="1"/>
+					<ingredient item_name="Nekker Warrior mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh201_cave_troll__mh202_nekker_warrior__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh201_cave_troll__mh202_nekker_warrior" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh201_cave_troll_trophy" quantity="1"/>
+					<ingredient item_name="mh202_nekker_warrior_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh201_cave_troll__mh202_nekker_warrior__4" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh201_cave_troll__mh202_nekker_warrior" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh201_cave_troll_trophy" quantity="1"/>
+					<ingredient item_name="mh202_nekker_warrior_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh201_cave_troll__q701_cyclops__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh201_cave_troll__q701_cyclops" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh201_cave_troll_trophy" quantity="1"/>
+					<ingredient item_name="q701_cyclops_trophy" quantity="1"/>
+					<ingredient item_name="Troll mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh201_cave_troll__q701_cyclops__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh201_cave_troll__q701_cyclops" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh201_cave_troll_trophy" quantity="1"/>
+					<ingredient item_name="q701_cyclops_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh202_nekker_warrior__q701_cyclops__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh202_nekker_warrior__q701_cyclops" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh202_nekker_warrior_trophy" quantity="1"/>
+					<ingredient item_name="q701_cyclops_trophy" quantity="1"/>
+					<ingredient item_name="Nekker Warrior mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh202_nekker_warrior__q701_cyclops__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh202_nekker_warrior__q701_cyclops" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh202_nekker_warrior_trophy" quantity="1"/>
+					<ingredient item_name="q701_cyclops_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen red" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh202_nekker_warrior__q701_cyclops__3" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh202_nekker_warrior__q701_cyclops" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh202_nekker_warrior_trophy" quantity="1"/>
+					<ingredient item_name="q701_cyclops_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh102_arachas__q603_sharley__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh102_arachas__q603_sharley" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh102_arachas_trophy" quantity="1"/>
+					<ingredient item_name="q603_sharley_trophy" quantity="1"/>
+					<ingredient item_name="Arachas mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh102_arachas__q603_sharley__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh102_arachas__q603_sharley" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh102_arachas_trophy" quantity="1"/>
+					<ingredient item_name="q603_sharley_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh102_arachas__mh701_sharley_matriarch__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh102_arachas__mh701_sharley_matriarch" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh102_arachas_trophy" quantity="1"/>
+					<ingredient item_name="mh701_sharley_matriarch_trophy" quantity="1"/>
+					<ingredient item_name="Arachas mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh102_arachas__mh701_sharley_matriarch__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh102_arachas__mh701_sharley_matriarch" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh102_arachas_trophy" quantity="1"/>
+					<ingredient item_name="mh701_sharley_matriarch_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_q603_sharley__mh701_sharley_matriarch__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_q603_sharley__mh701_sharley_matriarch" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="q603_sharley_trophy" quantity="1"/>
+					<ingredient item_name="mh701_sharley_matriarch_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen green" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh306_dao__mh307_minion__1" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh306_dao__mh307_minion" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh306_dao_trophy" quantity="1"/>
+					<ingredient item_name="mh307_minion_trophy" quantity="1"/>
+					<ingredient item_name="Dao mutagen" quantity="1"/>
+				</ingredients>
+			</recipe>
+			<recipe name_name="soth_fuse_mh306_dao__mh307_minion__2" type_name="soth_fusion" level="1" cookedItem_name="soth_fused_mh306_dao__mh307_minion" cookedItemType="trophy" cookedItemQuantity="1" localisation_key_name="">
+				<ingredients>
+					<ingredient item_name="mh306_dao_trophy" quantity="1"/>
+					<ingredient item_name="mh307_minion_trophy" quantity="1"/>
+					<ingredient item_name="Mutagen blue" quantity="1"/>
+				</ingredients>
+			</recipe>
+		</alchemy_recipes>
+	</custom>
 </redxml>

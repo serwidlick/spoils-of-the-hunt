@@ -19,6 +19,9 @@ $wanted = @{
     'dlc\ep1\data\gameplay\items_plus\def_item_trophies.xml'        = 'dlc\ep1\data\gameplay\items_plus\def_item_trophies.xml'
     'dlc\bob\data\gameplay\items\def_item_trophies.xml'             = 'dlc\bob\data\gameplay\items\def_item_trophies.xml'
     'dlc\bob\data\gameplay\items_plus\def_item_trophies.xml'        = 'dlc\bob\data\gameplay\items_plus\def_item_trophies.xml'
+    'gameplay\items\def_item_ingredients.xml'                       = 'gameplay\items\def_item_ingredients.xml'
+    'dlc\bob\data\gameplay\items\def_item_ingredients.xml'          = 'dlc\bob\data\gameplay\items\def_item_ingredients.xml'
+    'gameplay\items\def_item_alchemy_recipes_mutagens.xml'          = 'gameplay\items\def_item_alchemy_recipes_mutagens.xml'
     'gameplay\globals\tooltip_settings.csv'                         = 'gameplay\globals\tooltip_settings.csv'
 }
 foreach ($d in 1,2,5,8,10,11,13,14,18) { $wanted["dlc\dlc$d\dlc$d.reddlc"] = "dlc-mounters\dlc__dlc$d`__dlc$d.reddlc" }

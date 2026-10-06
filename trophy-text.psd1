@@ -41,4 +41,15 @@
         @('q704_garkain_trophy',         "A garkain's head, jaw unhinged even in death. Higher vampires are not so easily killed, but their lesser kin share this one's weaknesses."),
         @('mq7009_griffin_trophy',       "A Toussaint griffin's head, feathers still scented by the vineyards it hunted over. A griffin's weak points are the same from White Orchard to Beauclair.")
     )
+
+    # Vanilla gives several trophies the same display name (four "Griffin trophy", two "Wyvern", two "Leshen", two
+    # "Noonwraith"), which makes fusion recipes indistinguishable. These override the name of a redefined item.
+    Names = @(
+        @('q002_griffin_trophy',      'Royal griffin trophy'),
+        @('mh301_gryphon_trophy',     'Archgriffin trophy'),
+        @('mq7009_griffin_trophy',    'Toussaint griffin trophy'),
+        @('mq1051_wyvern_trophy',     'Skellige wyvern trophy'),
+        @('mh302_leshy_trophy',       'Skellige leshen trophy'),
+        @('mq0003_noonwraith_trophy', 'White Orchard noonwraith trophy')
+    )
 }
