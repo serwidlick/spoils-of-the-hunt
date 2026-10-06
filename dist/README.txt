@@ -9,7 +9,8 @@ bonus the moment you load.
 
 INSTALL
 -------
-Vortex: install the archive like any other mod and deploy.
+mod.io: subscribe from the game's Mods menu (main menu > Mods) and restart the game.
+Vortex: install the Nexus archive like any other mod and deploy.
 Manual: copy the DLC and Mods folders into your game folder (the one containing bin, content,
 DLC and Mods). Quit the game first.
 
@@ -35,5 +36,5 @@ Remove both folders. Trophies revert to their vanilla bonuses; nothing is stored
 
 SOURCE
 ------
-Mod page: https://www.nexusmods.com/witcher3/mods/13705
+Mod page: https://www.nexusmods.com/witcher3/mods/13705 (also on mod.io, hub "The Witcher 3: Wild Hunt")
 Source:   https://github.com/serwidlick/spoils-of-the-hunt
