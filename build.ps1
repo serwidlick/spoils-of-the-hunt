@@ -119,7 +119,7 @@ if ($ModIo) {
     if ($ScriptBlob) {
         # Consoles cannot compile WitcherScript; the game looks for precompiled.rsblob next to info.json
         # ("missingScriptBlob" in the loader). wcc_lite is REDkit's offline compiler.
-        & (Join-Path $root 'make-rsblob.ps1') -ScriptsDir (Join-Path $root 'src\scripts') -OutFile (Join-Path $mioMod 'precompiled.rsblob') -RedkitDir $RedkitDir
+        & (Join-Path $root 'make-rsblob.ps1') -ScriptsDir (Join-Path $root 'src\scripts') -OutFile (Join-Path $mioMod 'precompiled.rsblob') -LogFile (Join-Path $root 'build\wcc.log') -RedkitDir $RedkitDir
         if (-not (Test-Path (Join-Path $mioMod 'precompiled.rsblob'))) { throw 'script blob was not produced' }
     }
 
@@ -141,6 +141,7 @@ if ($ModIo) {
     [IO.File]::WriteAllText((Join-Path $mioMod 'info.json'), $json + "`n", [Text.UTF8Encoding]::new($false))
 
     # layout assertions
+    if (Get-ChildItem $mio -Recurse -File -Include '*.log', '*.txt', '*.md') { throw 'mod.io layout wrong: stray text file in package' }
     foreach ($must in @("dlc\$dlcName\content\blob0.bundle", "dlc\$dlcName\content\metadata.store",
                         "mods\$modName\content\blob0.bundle", "mods\$modName\content\metadata.store",
                         "mods\$modName\content\en.w3strings", "mods\$modName\content\info.json",

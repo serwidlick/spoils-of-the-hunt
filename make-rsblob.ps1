@@ -11,6 +11,7 @@ param(
     [Parameter(Mandatory)] [string]$ScriptsDir,
     [Parameter(Mandatory)] [string]$OutFile,
     [string]$RedkitDir = 'C:\Program Files (x86)\Steam\steamapps\common\The Witcher 3 REDkit',
+    [string]$LogFile = "$OutFile.wcc.log",
     [int]$TimeoutMinutes = 20
 )
 $ErrorActionPreference = 'Stop'
@@ -52,7 +53,7 @@ while (-not $p.WaitForExit(2000)) {
     if ((Get-Date) -gt $deadline) { $p.Kill(); throw "wcc_lite did not finish within $TimeoutMinutes minutes" }
 }
 $log = $stdout.Result + $stderr.Result
-$logFile = [IO.Path]::ChangeExtension($OutFile, '.wcc.log')
+$logFile = $LogFile
 New-Item -ItemType Directory -Force (Split-Path $OutFile) | Out-Null
 $log | Set-Content $logFile
 if ($p.ExitCode -ne 0) { throw "wcc_lite exited with code $($p.ExitCode); see $logFile" }
