@@ -7,18 +7,27 @@
 #   Mods\modSpoilsOfTheHunt\content\{blob0.bundle, metadata.store}  whole-file replacements (tooltip table)
 #   Mods\modSpoilsOfTheHunt\content\scripts\...                     the patched attack script (loose)
 #   .\build.ps1 -Package   -> also zip a Nexus/Vortex-ready archive into .\build\
+#   .\build.ps1 -ModIo     -> also zip a mod.io-ready archive (REDkit "packed" layout, lowercase paths, info.json)
+#   .\build.ps1 -ModIo -ScriptBlob -> additionally compile the script into precompiled.rsblob with REDkit's wcc_lite
+#                             (needed for the mod to be considered for consoles; PC works without it)
 #   .\build.ps1 -Install -TestHarness -> also install the test-only scripts from src\scripts-test (never packaged)
 #   .\build.ps1 -Uninstall -> remove the mod from the game folder (e.g. before letting Vortex manage it) and stop
 param(
     [switch]$Install,
     [switch]$Uninstall,
     [switch]$Package,
+    [switch]$ModIo,
+    [switch]$ScriptBlob,
     [switch]$TestHarness,
-    [string]$GameDir = 'C:\Program Files (x86)\Steam\steamapps\common\The Witcher 3'
+    [string]$GameDir = 'C:\Program Files (x86)\Steam\steamapps\common\The Witcher 3',
+    [string]$RedkitDir = 'C:\Program Files (x86)\Steam\steamapps\common\The Witcher 3 REDkit'
 )
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
 $version = '1.0.0'
+# Integer the game compares against its own build ("GAME version: current=%d, encountered=%d"). REDkit writes it
+# into every project's info.json; 29 is what REDkit 5.0 projects published after the Remastered launch carry.
+$modioGameVersion = '29'
 $dlcName = 'dlcSpoilsOfTheHunt'
 $modName = 'modSpoilsOfTheHunt'
 $buildDlc = Join-Path $root "build\$dlcName"
@@ -86,6 +95,78 @@ if ($Package) {
     if (Test-Path $zip) { Remove-Item $zip -Force }
     Compress-Archive -Path "$pkg\*" -DestinationPath $zip
     "Packaged $zip"
+}
+
+if ($ScriptBlob -and -not $ModIo) { throw '-ScriptBlob only makes sense together with -ModIo' }
+
+if ($ModIo) {
+    if ($TestHarness) { throw 'refusing to package a build that contains the test harness' }
+    # mod.io (the in-game Mods menu) expects what REDkit's Publish step writes to its "packed" folder: dlc\ and
+    # mods\ at the archive root, an info.json manifest in the mod's content folder, and lowercase paths (the
+    # console file systems are case-sensitive; bundle-internal paths are already lowercase). Nothing else at root.
+    $mio = Join-Path $root 'build\modio'
+    if (Test-Path $mio) { Remove-Item $mio -Recurse -Force }
+    foreach ($pair in @(@($buildDlc, "dlc\$dlcName"), @($buildMod, "mods\$modName"))) {
+        Get-ChildItem $pair[0] -Recurse -File | ForEach-Object {
+            $rel = $_.FullName.Substring($pair[0].Length).TrimStart('\')
+            $dest = Join-Path $mio (($pair[1] + '\' + $rel).ToLowerInvariant())
+            New-Item -ItemType Directory -Force (Split-Path $dest) | Out-Null
+            Copy-Item $_.FullName $dest
+        }
+    }
+    $mioMod = Join-Path $mio "mods\$($modName.ToLower())\content"
+
+    if ($ScriptBlob) {
+        # Consoles cannot compile WitcherScript; the game looks for precompiled.rsblob next to info.json
+        # ("missingScriptBlob" in the loader). wcc_lite is REDkit's offline compiler.
+        & (Join-Path $root 'make-rsblob.ps1') -ScriptsDir (Join-Path $root 'src\scripts') -OutFile (Join-Path $mioMod 'precompiled.rsblob') -RedkitDir $RedkitDir
+        if (-not (Test-Path (Join-Path $mioMod 'precompiled.rsblob'))) { throw 'script blob was not produced' }
+    }
+
+    # Same keys REDkit writes (bool spelled "succesfullyCooked" in REDkit too). name = project name, modName = title.
+    $manifest = [ordered]@{
+        name              = 'SpoilsOfTheHunt'
+        modName           = 'Spoils of the Hunt'
+        version           = $version
+        gameVersion       = $modioGameVersion
+        description       = 'Lore-friendly saddle trophy bonuses: each trophy gives attack power against its own monster class or a trait of the beast, instead of +5% gold or XP.'
+        author            = 'serwidlick'
+        idSpace           = 10000000
+        workshopId        = 0
+        succesfullyCooked = $true
+        dependencies      = @()
+        useLooseScripts   = $false
+    }
+    $json = ($manifest | ConvertTo-Json -Depth 3) -replace '"dependencies":\s*(null|\{\})', '"dependencies": []'
+    [IO.File]::WriteAllText((Join-Path $mioMod 'info.json'), $json + "`n", [Text.UTF8Encoding]::new($false))
+
+    # layout assertions
+    foreach ($must in @("dlc\$dlcName\content\blob0.bundle", "dlc\$dlcName\content\metadata.store",
+                        "mods\$modName\content\blob0.bundle", "mods\$modName\content\metadata.store",
+                        "mods\$modName\content\en.w3strings", "mods\$modName\content\info.json",
+                        "mods\$modName\content\scripts\local\modSpoilsOfTheHunt_attack.ws")) {
+        if (-not (Test-Path (Join-Path $mio $must.ToLowerInvariant()))) { throw "mod.io layout wrong: missing $must" }
+    }
+    Get-ChildItem $mio -Recurse | ForEach-Object {
+        $rel = $_.FullName.Substring($mio.Length)
+        if ($rel -cne $rel.ToLowerInvariant()) { throw "mod.io layout wrong: path is not lowercase: $rel" }
+    }
+    $parsed = Get-Content (Join-Path $mioMod 'info.json') -Raw | ConvertFrom-Json
+    if ($parsed.gameVersion -ne $modioGameVersion -or $parsed.version -ne $version -or $parsed.dependencies.Count -ne 0) { throw 'info.json round-trip mismatch' }
+
+    # .NET's zip writer uses forward slashes in entry names (Compress-Archive on Windows PowerShell did not).
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    $zip = Join-Path $root "build\SpoilsOfTheHunt-$version-modio.zip"
+    if (Test-Path $zip) { Remove-Item $zip -Force }
+    [IO.Compression.ZipFile]::CreateFromDirectory($mio, $zip, [IO.Compression.CompressionLevel]::Optimal, $false)
+    $entries = [IO.Compression.ZipFile]::OpenRead($zip)
+    try {
+        foreach ($e in $entries.Entries) {
+            if ($e.FullName -match '\\' -or $e.FullName -cne $e.FullName.ToLowerInvariant()) { throw "bad zip entry name: $($e.FullName)" }
+            if ($e.FullName -notmatch '^(dlc|mods)/') { throw "unexpected zip root entry: $($e.FullName)" }
+        }
+        "Packaged $zip ($($entries.Entries.Count) entries$(if ($ScriptBlob) { ', with precompiled.rsblob' } else { ', loose script only: PC' }))"
+    } finally { $entries.Dispose() }
 }
 
 if ($Install) {
