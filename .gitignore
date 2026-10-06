@@ -2,3 +2,5 @@ tools/
 build/
 vanilla/
 *.zip
+*.token
+.modio-token

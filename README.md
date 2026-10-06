@@ -37,6 +37,7 @@ PowerShell in this repo.
 | `pack-mod.ps1` | Packs a folder into a legacy-format bundle + metadata.store (the format proven to load on Remastered). |
 | `make-w3strings.ps1` | Writes the localisation tables (stat labels, DLC name). |
 | `build.ps1` | Runs the above and assembles `build\`; `-Install` copies into the game; `-Package` zips for Nexus/Vortex; `-ModIo` zips for mod.io. |
+| `release.ps1` | Cuts a release: version bump, both packages, tag, GitHub release, mod.io upload via API, opens the Nexus upload page. See Releasing. |
 | `make-rsblob.ps1` | Compiles the script into `precompiled.rsblob` with REDkit's `wcc_lite` (`build.ps1 -ModIo -ScriptBlob`); only needed for console eligibility on mod.io. |
 | `src\scripts\local\` | The one annotation-style script (`modSpoilsOfTheHunt_attack.ws`). No vanilla file copies. |
 | `dist\README.txt` | The readme shipped inside the release archive (`build.ps1 -Package`). |
@@ -59,8 +60,23 @@ to build it with REDkit's `wcc_lite` (REDkit installed from Steam, and its EULA 
 window `wcc_lite` opens). CDPR says console script mods must be made with REDkit, so console
 acceptance is not guaranteed either way.
 
-## How it works on Remastered
-Remastered changed XML modding. Replacing a vanilla gameplay XML wholesale crashes the game at
+## Releasing
+
+```powershell
+.\release.ps1 -Version 1.0.1 -Changelog "What changed."
+```
+
+One command does everything that can be automated: it refuses to run on a dirty tree or with the game open,
+bumps the version in `build.ps1`, builds and checks both packages (`-Package -ModIo -ScriptBlob`), commits
+`chore(release): vX.Y.Z`, tags, uploads the mod.io zip through the mod.io API and marks it live, pushes,
+creates a GitHub release with both zips attached, then opens the Nexus file-upload page with the changelog on
+the clipboard. Nexus has no upload API, so that last file pick is manual. `-DryRun` builds and reports
+without changing anything; `-SkipModIo` / `-SkipGitHub` / `-SkipNexus` skip a store.
+
+mod.io needs a write-capable OAuth token: on mod.io, avatar > API Access > create a token, then put it in
+the `MODIO_TOKEN` environment variable or in `%USERPROFILE%\.modio-token`. Token files are gitignored.
+
+## How it works on RemasteredRemastered changed XML modding. Replacing a vanilla gameplay XML wholesale crashes the game at
 startup. Instead a mod ships a DLC whose `.reddlc` carries a `CR4DefinitionsDLCMounter` pointing at
 its own XML, and entries in that XML override vanilla ones by name with `on_conflict="replace"`
 (the REDkit 5.0 changelog spells it `onConflict`; the engine parses `on_conflict`).
