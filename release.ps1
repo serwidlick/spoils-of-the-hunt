@@ -37,9 +37,10 @@ if ([version]$Version -le [version]$current) { throw "Version $Version is not ne
 if (-not $SkipGitHub) { gh auth status *> $null; if ($LASTEXITCODE -ne 0) { throw 'gh is not logged in (gh auth login).' } }
 $token = $null
 if (-not $SkipModIo) {
-    $tokenFile = Join-Path $env:USERPROFILE '.modio-token'
-    $token = if ($env:MODIO_TOKEN) { $env:MODIO_TOKEN } elseif (Test-Path $tokenFile) { (Get-Content $tokenFile -Raw).Trim() }
-    if (-not $token) { throw "No mod.io token: set MODIO_TOKEN or write it to $tokenFile (or pass -SkipModIo)." }
+    $tokenFile = @('.modio-token', 'modio-token.txt', '.modio-token.txt') | ForEach-Object { Join-Path $env:USERPROFILE $_ } | Where-Object { Test-Path $_ } | Select-Object -First 1
+    $token = if ($env:MODIO_TOKEN) { $env:MODIO_TOKEN } elseif ($tokenFile) { (Get-Content $tokenFile -Raw).Trim() }
+    if (-not $token) { throw "No mod.io token: set MODIO_TOKEN or write it to $env:USERPROFILE\.modio-token (or pass -SkipModIo)." }
+    if ($token -match '^[0-9a-f]{32}$') { throw 'That is a mod.io API key (read-only). Uploads need an OAuth access token: mod.io > avatar > API Access > "Create an OAuth 2 Access Token" (it is several hundred characters long).' }
     $headers = @{ Authorization = "Bearer $token"; Accept = 'application/json' }
     # resolve the mod id from the account's own mods; this also proves the token works before we change anything
     $mine = Invoke-RestMethod -Uri "https://api.mod.io/v1/me/mods?name_id=$ModIoNameId" -Headers $headers
