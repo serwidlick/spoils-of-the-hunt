@@ -75,3 +75,15 @@ its own XML, and entries in that XML override vanilla ones by name with `on_conf
   `theGame.GetDefinitionsManager().IsAbilityDefined(...)` tell you whether the DLC mounted and the
   XML loaded. The game also writes `DlcEnabled_dlc_spoilsofthehunt=1` to `Documents\The Witcher 3\dx12user.settings`.
 - Crash dumps land in `%LOCALAPPDATA%\CrashDumps`; there is no engine text log.
+
+## Testing
+
+- `check-sources.ps1` runs on every build (see Layout).
+- `src\scripts-test\` and `src\config-test\` hold the in-game test harness: it spawns a creature
+  of the matching class when a trophy is hung on Roach, records non-critical hits with and
+  without a trophy bonus, and mirrors the totals into `dx12user.settings` so they can be read
+  from outside the game. Installed only with `build.ps1 -Install -TestHarness`; `-Package`
+  refuses to include it, and the checker fails if test code appears in `src\scripts\`.
+- `dev\monitor-launch.ps1` waits for the game to start and reports a crash or a clean startup;
+  `dev\watch-results.ps1` tails the harness totals. The in-game console does not open on
+  Remastered, so these replace it.
