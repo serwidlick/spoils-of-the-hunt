@@ -1,6 +1,8 @@
 # Spoils of the Hunt (dlcSpoilsOfTheHunt / modSpoilsOfTheHunt)
 
 A lore-friendly rework of the saddle trophies in The Witcher 3: Wild Hunt Remastered (game 5.x).
+
+**Download:** [Nexus Mods, mod 13705](https://www.nexusmods.com/witcher3/mods/13705)
 Each trophy grants a bonus that comes from the beast it was taken from, instead of the vanilla
 +5% XP / gold / herbs. The full bonus table and reasoning is in
 [docs/trophy-rework-design.md](docs/trophy-rework-design.md).

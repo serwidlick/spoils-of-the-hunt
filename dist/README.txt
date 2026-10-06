@@ -35,4 +35,5 @@ Remove both folders. Trophies revert to their vanilla bonuses; nothing is stored
 
 SOURCE
 ------
-Build scripts and the full bonus table are published with the mod's source repository (link on the mod page).
+Mod page: https://www.nexusmods.com/witcher3/mods/13705
+Source:   https://github.com/serwidlick/spoils-of-the-hunt
