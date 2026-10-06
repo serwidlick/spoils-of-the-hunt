@@ -36,15 +36,30 @@ PowerShell in this repo.
 | `make-reddlc.ps1` | Builds the DLC definition file from a vanilla template via WolvenKit's CR2W library. |
 | `pack-mod.ps1` | Packs a folder into a legacy-format bundle + metadata.store (the format proven to load on Remastered). |
 | `make-w3strings.ps1` | Writes the localisation tables (stat labels, DLC name). |
-| `build.ps1` | Runs the above and assembles `build\`; `-Install` copies into the game. |
+| `build.ps1` | Runs the above and assembles `build\`; `-Install` copies into the game; `-Package` zips for Nexus/Vortex; `-ModIo` zips for mod.io. |
+| `make-rsblob.ps1` | Compiles the script into `precompiled.rsblob` with REDkit's `wcc_lite` (`build.ps1 -ModIo -ScriptBlob`); only needed for console eligibility on mod.io. |
 | `src\scripts\local\` | The one annotation-style script (`modSpoilsOfTheHunt_attack.ws`). No vanilla file copies. |
 | `dist\README.txt` | The readme shipped inside the release archive (`build.ps1 -Package`). |
 | `vanilla\` | Untouched game files for reference (trophy XML, tooltip CSV, DLC definitions). Not committed: they are CD PROJEKT RED's. Run `extract-vanilla.ps1` once after cloning to pull them from your game install. |
 | `extract-vanilla.ps1` | Rebuilds `vanilla\` from the game's bundles (verified byte-identical). |
 | `tools\` | WolvenKit, w3edit, reference sources. Not committed. |
 
-## How it works on Remastered
+## mod.io (in-game Mods menu)
 
+`.\build.ps1 -ModIo` writes `build\SpoilsOfTheHunt-<version>-modio.zip` in the layout REDkit's Publish
+step produces: `dlc\` and `mods\` at the archive root, every path lowercase, and an `info.json`
+manifest (`gameVersion` 29, the value current REDkit 5.0 projects carry) in the mod's `content\`
+folder. Upload it on the [Witcher 3 hub on mod.io](https://mod.io/g/the-witcher-3) (Add > Mod; needs a
+mod.io account linked to a CD PROJEKT RED account). Set the profile to Private first and subscribe
+from the game's Mods menu to test it, then make it Public.
+
+PC players get the mod as-is: the game compiles the loose script at startup. Consoles cannot
+compile scripts, so console review needs `precompiled.rsblob` next to `info.json`; add `-ScriptBlob`
+to build it with REDkit's `wcc_lite` (REDkit installed from Steam, and its EULA accepted once in the
+window `wcc_lite` opens). CDPR says console script mods must be made with REDkit, so console
+acceptance is not guaranteed either way.
+
+## How it works on Remastered
 Remastered changed XML modding. Replacing a vanilla gameplay XML wholesale crashes the game at
 startup. Instead a mod ships a DLC whose `.reddlc` carries a `CR4DefinitionsDLCMounter` pointing at
 its own XML, and entries in that XML override vanilla ones by name with `on_conflict="replace"`
