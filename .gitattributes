@@ -9,3 +9,4 @@
 *.bundle binary
 *.store binary
 *.w3strings binary
+dev/githooks/* text eol=lf
