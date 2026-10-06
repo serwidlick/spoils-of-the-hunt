@@ -87,3 +87,13 @@ its own XML, and entries in that XML override vanilla ones by name with `on_conf
 - `dev\monitor-launch.ps1` waits for the game to start and reports a crash or a clean startup;
   `dev\watch-results.ps1` tails the harness totals. The in-game console does not open on
   Remastered, so these replace it.
+
+## Commits
+
+This repo uses [Conventional Commits](https://www.conventionalcommits.org/): `<type>[(scope)][!]: <description>`,
+types `feat fix docs style refactor perf test build ci chore revert`. A `commit-msg` hook in `dev\githooks`
+rejects anything else. Enable it once per clone:
+
+```powershell
+git config core.hooksPath dev/githooks
+```
