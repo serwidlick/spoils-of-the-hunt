@@ -8,6 +8,9 @@
 #   4. values are sane and use the right type (vs-class = mult like oils, resistances/chances = add)
 #   5. the tooltip table is vanilla plus exactly the rows we add
 #   6. the shipped script is vanilla plus the one marked patch block, nothing else (no leftover test hooks)
+#   7. every override ability carries the SpoilsOfTheHunt tag (the attack script reads only tagged abilities)
+#   8. every trophy with vanilla's generic description is redefined with its own text, strings exist, and each
+#      redefinition is vanilla plus that one change (icon, mesh, tags, price, abilities intact)
 param(
     [string]$GameDir = 'C:\Program Files (x86)\Steam\steamapps\common\The Witcher 3',
     [string]$OurStrings = "$PSScriptRoot\build\modSpoilsOfTheHunt\content\en.w3strings"
@@ -150,6 +153,48 @@ if ($attack -match "valueMultiplicative\s*\*=\s*\(1\s*\+\s*bonus\.valueMultiplic
 "`n[7] ability tags"
 foreach ($ab in $ours.redxml.definitions.abilities.ability) { if (("$($ab.tags)").Trim() -eq 'SpoilsOfTheHunt') { $script:passes++ } else { Fail "$($ab.name) is missing <tags>SpoilsOfTheHunt</tags>" } }
 Pass "$($ourAbilities.Count) abilities carry the SpoilsOfTheHunt tag"
+
+# ---------------------------------------------------------------- 8. item redefinitions and flavour text
+"`n[8] item redefinitions and flavour text"
+$flavour = Import-PowerShellDataFile (Join-Path $root 'trophy-text.psd1')
+$descByItem = @{}
+foreach ($p in $flavour.Descriptions) { if ($descByItem.ContainsKey($p[0])) { Fail "duplicate flavour text entry $($p[0])" }; $descByItem[$p[0]] = $p[1] }
+$ourItems = @{}
+foreach ($it in $ours.redxml.definitions.items.item) { $ourItems[$it.name.Trim()] = $it }
+$vanillaItems = @{}
+foreach ($f in $vanillaFiles) {
+    $text = [System.IO.File]::ReadAllText((Join-Path $van $f))
+    [xml]$doc = [regex]::Replace($text, '(?s)<!--.*?-->', '')
+    foreach ($it in $doc.redxml.definitions.items.item) { if ($it.category -eq 'trophy') { $vanillaItems[$it.name.Trim()] = $it } }
+}
+foreach ($name in ($vanillaItems.Keys | Sort-Object)) {
+    $v = $vanillaItems[$name]
+    $generic = $v.localisation_key_description.Trim() -eq 'item_desc_trophy'
+    if ($generic) {
+        if (-not $ourItems.ContainsKey($name)) { Fail "$name still shows the generic vanilla description"; continue }
+        $key = $ourItems[$name].localisation_key_description.Trim()
+        $t = $descByItem[$name]
+        if ($key -ne "item_desc_soth_$name") { Fail "$name description key is '$key', expected item_desc_soth_$name" }
+        elseif (-not $ourKeys.Contains((KeyHash $key))) { Fail "no string for $key in our w3strings (tooltip would show #$key)" }
+        elseif (-not $t -or $t.Length -lt 40 -or $t.Length -gt 260) { Fail "$name flavour text is $($t.Length) chars (want 40-260 so it fits the tooltip)" }
+        else { Pass "${name}: own description ($($t.Length) chars)" }
+    } elseif ($ourItems.ContainsKey($name) -and $name -ne 'mq7017_zmora_trophy') { Fail "$name has a unique vanilla description and should not be redefined" }
+    else { Pass "${name}: keeps its vanilla description" }
+    if ($ourItems.ContainsKey($name)) {
+        # a redefinition must be vanilla plus our one change, or the trophy would lose its icon, mesh, tags or price
+        $o = $ourItems[$name]
+        if ($o.GetAttribute('on_conflict') -ne 'replace') { Fail "$name redefinition lacks on_conflict=`"replace`"" }
+        foreach ($attr in $v.Attributes) {
+            if ($attr.Name -eq 'localisation_key_description' -and $generic) { continue }
+            if ($o.GetAttribute($attr.Name).Trim() -ne $attr.Value.Trim()) { Fail "$name attribute '$($attr.Name)' differs from vanilla" }
+        }
+        if (("$($o.tags)" -replace '\s', '') -ne ("$($v.tags)" -replace '\s', '')) { Fail "$name tags differ from vanilla" }
+        $vAb = @($v.base_abilities.a | ForEach-Object { "$_".Trim() }); $oAb = @($o.base_abilities.a | ForEach-Object { "$_".Trim() })
+        if ($name -eq 'mq7017_zmora_trophy') { $vAb = $vAb -replace '^spriggan_trophy_stats$', 'zmora_trophy_stats' }
+        if (($vAb -join ',') -ne ($oAb -join ',')) { Fail "$name abilities differ from vanilla: $($oAb -join ',')" }
+    }
+}
+foreach ($n in $descByItem.Keys) { if (-not $vanillaItems.ContainsKey($n)) { Fail "flavour text for unknown item '$n'" } }
 
 # ---------------------------------------------------------------- summary
 "`n$passes checks passed, $($fails.Count) failed"

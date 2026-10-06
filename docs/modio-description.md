@@ -9,6 +9,7 @@ Spoils of the Hunt replaces all of them. Each trophy now carries something that 
 - **Hunter's knowledge:** attack power against the monster's own class. Hang a griffin head and you hit Hybrids (griffins, sirens, harpies, succubi) 10% harder.
 - **A trait of the creature:** forktail and arachas venom give poison resistance, the Hound of the Wild Hunt gives frost resistance, the earth elemental and chort harden you against blunt blows, the nightwraith strengthens Yrden, the succubus strengthens Axii.
 - **Tiered by the hunt:** minor beasts give 5%, named contract monsters 10%, rare ones such as the archgriffin or white basilisk 15% or two smaller bonuses.
+- **Its own story:** every trophy carries a short description of the beast and what the hunter learned from it.
 
 Works on any save. Trophies you already own pick up their new bonus the moment you load. New Game Plus is supported. All 40 trophies across the base game, Hearts of Stone and Blood and Wine are covered.
 
@@ -77,7 +78,6 @@ Subscribe here, then restart the game. The mod appears in the game's Mods menu; 
 
 ## Known limits
 
-- Trophy descriptions still show the generic vanilla text; only the stat line changes. Per-trophy flavour text is planned.
 - Only the trophy on Roach's saddle counts, as in vanilla. Trophies in your bags do nothing.
 
 ## Source

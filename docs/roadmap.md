@@ -13,7 +13,7 @@ Everything below builds on what v1 proved: we can override any trophy ability, a
 
 ## Phase 2 — Polish and release the base mod · cheap
 
-1. **Flavour text per trophy.** Replace the shared "Strap trophies to your saddle" description with one line per beast ("Forktail venom, dried and ground into the hide. The smell alone keeps lesser poisons at bay."). Needs each item redefined with `on_conflict="replace"` and a new `localisation_key_description`, plus strings in our `.w3strings`. We already have both mechanisms.
+1. **Flavour text per trophy: done (v1.1.0).** Replaced the shared "Strap trophies to your saddle" description with one line per beast ("Forktail venom, dried and ground into the hide. The smell alone keeps lesser poisons at bay."). Needs each item redefined with `on_conflict="replace"` and a new `localisation_key_description`, plus strings in our `.w3strings`. We already have both mechanisms.
 2. **Balance pass after play.** Numbers are deliberately modest; revisit once a few contracts have been fought with the bonuses live.
 3. **Nexus page: done (mod 13705). mod.io: uploaded 2026-10-06 as a private profile (`mod.io/g/the-witcher-3/m/spoils-of-the-hunt`) with `precompiled.rsblob`; awaiting CDPR console QA, then switch to Public.** Build with `build.ps1 -ModIo -ScriptBlob`.
 4. **Compatibility notes.** Script Merger for the single script change; our XML never touches vanilla files, so it stacks with most other mods.

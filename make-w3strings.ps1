@@ -19,6 +19,9 @@ $strings = @(
     @('dlc_spoilsofthehunt_name',                "Spoils of the Hunt"),
     @('dlc_spoilsofthehunt_desc',                'Lore-friendly saddle trophy bonuses.')
 )
+# Per-trophy flavour text (ids follow in file order; append-only, see trophy-text.psd1).
+$flavour = Import-PowerShellDataFile (Join-Path $PSScriptRoot 'trophy-text.psd1')
+foreach ($pair in $flavour.Descriptions) { $strings += ,@("item_desc_soth_$($pair[0])", $pair[1]) }
 # English text is shipped for every language the game supports, so no language sees raw #keys.
 $languages = 'en','ar','br','cn','cz','de','es','esmx','fr','hu','it','jp','kr','pl','ru','tr','ua','zh'
 

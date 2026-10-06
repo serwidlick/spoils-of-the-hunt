@@ -83,7 +83,7 @@ Classes follow the in-game bestiary. "vs." bonuses are attack power against that
 - **XML.** Every trophy's `xxx_trophy_stats` ability in the three `def_item_trophies.xml` files (base, Hearts of Stone, Blood and Wine) and their NG+ twins gets new attributes. The game already applies a trophy's abilities directly to Geralt when it is hung on Roach, so resistances, sign intensity and crit chance work with no further code.
 - **One script line.** Attack power "vs. class" is only read from the sword (oils) today. A one-line addition to the damage calculation makes Geralt's own bonuses count too. The change is Script Merger friendly.
 - **Packaging.** XML files must be packed into a mod bundle, which needs WolvenKit. Scripts go in the mod folder as loose files.
-- **No new text needed for v1.** The tooltip already has names for every stat used. Custom flavour descriptions per trophy can come in v2 via a w3strings file.
+- **Flavour text.** Each trophy that shared the generic vanilla description is redefined (verbatim copy, `on_conflict="replace"`) with its own `localisation_key_description`; the text lives in `trophy-text.psd1` and ships in the mod's `.w3strings`. Blood and Wine trophies that already had unique descriptions keep CDPR's text.
 
 ## Open questions for you
 

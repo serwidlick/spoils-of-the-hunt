@@ -77,13 +77,39 @@ $vanillaAbilities = [regex]::Matches(($vanillaText -join "`n"), '<ability name="
 $newAbilities = @('zmora_trophy_stats')
 foreach ($n in $abilities.Keys) { if ($n -notin $vanillaAbilities -and $n -notin $newAbilities) { throw "ability '$n' does not exist in vanilla" } }
 
-# The Toussaint night wraith shared the spriggan's ability in vanilla; redefine the item so it uses its own.
-$bob = [System.IO.File]::ReadAllText((Join-Path $van 'dlc\bob\data\gameplay\items\def_item_trophies.xml'))
-$zmoraItem = [regex]::Match($bob, '(?s)<item\s+name\s*=\s*"mq7017_zmora_trophy".*?</item>').Value
-if (-not $zmoraItem) { throw 'zmora item not found in vanilla BaW file' }
-$zmoraItem = $zmoraItem -replace 'spriggan_trophy_stats', 'zmora_trophy_stats'
-$zmoraItem = $zmoraItem -replace '^<item\s+', '<item on_conflict="replace" '
-$zmoraItem = ($zmoraItem -split "`r?`n" | ForEach-Object { "`t`t`t" + $_.Trim() }) -join "`n"
+# Item redefinitions, copied verbatim from vanilla and replaced by name:
+#  - every trophy that shows vanilla's shared generic description gets its own (text in trophy-text.psd1);
+#    the Blood and Wine trophies that already have a unique vanilla description are left alone.
+#  - the Toussaint night wraith shared the spriggan's ability in vanilla; it gets its own.
+$flavour = Import-PowerShellDataFile (Join-Path $root 'trophy-text.psd1')
+$descByItem = [ordered]@{}
+foreach ($pair in $flavour.Descriptions) { if ($descByItem.Contains($pair[0])) { throw "duplicate flavour text for $($pair[0])" }; $descByItem[$pair[0]] = $pair[1] }
+$items = New-Object System.Collections.Generic.List[string]
+$redefined = @{}
+foreach ($rel in 'gameplay\items\def_item_trophies.xml', 'dlc\ep1\data\gameplay\items\def_item_trophies.xml', 'dlc\bob\data\gameplay\items\def_item_trophies.xml') {
+    $text = [System.IO.File]::ReadAllText((Join-Path $van $rel))
+    $text = [regex]::Replace($text, '(?s)<!--.*?-->', '')          # drop the commented-out werewolf trophy
+    foreach ($m in [regex]::Matches($text, '(?s)<item\s[^>]*?>.*?</item>')) {
+        $item = $m.Value
+        if ($item -notmatch 'category\s*=\s*"trophy"') { continue }
+        $name = [regex]::Match($item, '(?<![\w])name\s*=\s*"([^"]+)"').Groups[1].Value
+        $changed = $false
+        if ($item -match 'localisation_key_description\s*=\s*"item_desc_trophy"') {
+            if (-not $descByItem.Contains($name)) { throw "no flavour text for '$name' in trophy-text.psd1" }
+            $item = $item -replace 'localisation_key_description\s*=\s*"item_desc_trophy"', "localisation_key_description=`"item_desc_soth_$name`""
+            $changed = $true
+        }
+        if ($name -eq 'mq7017_zmora_trophy') { $item = $item -replace 'spriggan_trophy_stats', 'zmora_trophy_stats'; $changed = $true }
+        if (-not $changed) { continue }
+        $item = $item -replace '^<item\s+', 'XITEMX '
+        $item = $item -replace '^XITEMX ', '<item on_conflict="replace" '
+        $item = ($item -split "`r?`n" | ForEach-Object { "`t`t`t" + $_.Trim() }) -join "`n"
+        $items.Add($item)
+        $redefined[$name] = $true
+    }
+}
+foreach ($n in $descByItem.Keys) { if (-not $redefined.ContainsKey($n)) { throw "flavour text for '$n' matches no vanilla trophy with the shared description" } }
+if (-not $redefined.ContainsKey('mq7017_zmora_trophy')) { throw 'zmora item not found in vanilla BaW file' }
 
 $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine('<?xml version="1.0" encoding="UTF-8"?>')
@@ -103,7 +129,7 @@ foreach ($name in $abilities.Keys) {
 }
 [void]$sb.AppendLine("`t`t</abilities>")
 [void]$sb.AppendLine("`t`t<items>")
-[void]$sb.AppendLine($zmoraItem)
+foreach ($item in $items) { [void]$sb.AppendLine($item) }
 [void]$sb.AppendLine("`t`t</items>")
 [void]$sb.AppendLine("`t</definitions>")
 [void]$sb.AppendLine('</redxml>')
@@ -112,7 +138,7 @@ New-Item -ItemType Directory -Force (Split-Path $dest) | Out-Null
 $text = $sb.ToString()
 [xml]$text | Out-Null   # well-formedness check
 [System.IO.File]::WriteAllText($dest, $text, (New-Object System.Text.UTF8Encoding $false))
-"{0}  ({1} abilities, 1 item)" -f $xmlRel, $abilities.Count
+"{0}  ({1} abilities, {2} items redefined, {3} with their own description)" -f $xmlRel, $abilities.Count, $items.Count, $descByItem.Count
 
 # Tooltip table (a plain CSV, replaced whole via the Mods layer): the item tooltip only shows
 # attributes listed here, and vanilla has no rows for percentage fire/frost resistance.
