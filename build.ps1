@@ -8,8 +8,10 @@
 #   Mods\modSpoilsOfTheHunt\content\scripts\...                     the patched attack script (loose)
 #   .\build.ps1 -Package   -> also zip a Nexus/Vortex-ready archive into .\build\
 #   .\build.ps1 -Install -TestHarness -> also install the test-only scripts from src\scripts-test (never packaged)
+#   .\build.ps1 -Uninstall -> remove the mod from the game folder (e.g. before letting Vortex manage it) and stop
 param(
     [switch]$Install,
+    [switch]$Uninstall,
     [switch]$Package,
     [switch]$TestHarness,
     [string]$GameDir = 'C:\Program Files (x86)\Steam\steamapps\common\The Witcher 3'
@@ -21,6 +23,17 @@ $dlcName = 'dlcSpoilsOfTheHunt'
 $modName = 'modSpoilsOfTheHunt'
 $buildDlc = Join-Path $root "build\$dlcName"
 $buildMod = Join-Path $root "build\$modName"
+
+if ($Uninstall) {
+    if (Get-Process -Name witcher3 -ErrorAction SilentlyContinue) { throw 'The game is running. Quit it before uninstalling.' }
+    foreach ($rel in @("DLC\$dlcName", "Mods\$modName", "DLC\dlcLoreTrophies", "Mods\modLoreTrophies",
+                       "bin\config\r4game\user_config_matrix\pc\SpoilsOfTheHuntTest.xml", "bin\config\r4game\user_config_matrix\pc\LoreTrophiesTest.xml")) {
+        $p = Join-Path $GameDir $rel
+        if (Test-Path $p) { Remove-Item $p -Recurse -Force; "Removed $p" }
+    }
+    "Uninstalled. (A DlcEnabled_dlc_spoilsofthehunt line may remain in Documents\The Witcher 3\dx12user.settings; it is harmless.)"
+    return
+}
 
 & (Join-Path $root 'generate-sources.ps1')
 
