@@ -4,3 +4,4 @@ vanilla/
 *.zip
 *.token
 .modio-token
+*apikey*

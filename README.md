@@ -37,7 +37,7 @@ PowerShell in this repo.
 | `pack-mod.ps1` | Packs a folder into a legacy-format bundle + metadata.store (the format proven to load on Remastered). |
 | `make-w3strings.ps1` | Writes the localisation tables (stat labels, DLC name). |
 | `build.ps1` | Runs the above and assembles `build\`; `-Install` copies into the game; `-Package` zips for Nexus/Vortex; `-ModIo` zips for mod.io. |
-| `release.ps1` | Cuts a release: version bump, both packages, tag, GitHub release, mod.io upload via API, opens the Nexus upload page. See Releasing. |
+| `release.ps1` | Cuts a release: version bump, both packages, tag, GitHub release, uploads to mod.io and Nexus through their APIs. See Releasing. |
 | `make-rsblob.ps1` | Compiles the script into `precompiled.rsblob` with REDkit's `wcc_lite` (`build.ps1 -ModIo -ScriptBlob`); only needed for console eligibility on mod.io. |
 | `src\scripts\local\` | The one annotation-style script (`modSpoilsOfTheHunt_attack.ws`). No vanilla file copies. |
 | `dist\README.txt` | The readme shipped inside the release archive (`build.ps1 -Package`). |
@@ -69,12 +69,15 @@ acceptance is not guaranteed either way.
 One command does everything that can be automated: it refuses to run on a dirty tree or with the game open,
 bumps the version in `build.ps1`, builds and checks both packages (`-Package -ModIo -ScriptBlob`), commits
 `chore(release): vX.Y.Z`, tags, uploads the mod.io zip through the mod.io API and marks it live, pushes,
-creates a GitHub release with both zips attached, then opens the Nexus file-upload page with the changelog on
-the clipboard. Nexus has no upload API, so that last file pick is manual. `-DryRun` builds and reports
+creates a GitHub release with both zips attached, then uploads the Nexus zip as a new version of the existing
+main file (previous version archived, mod version bumped, changelog added) through the Nexus v3 API. `-DryRun` builds and reports
 without changing anything; `-SkipModIo` / `-SkipGitHub` / `-SkipNexus` skip a store.
 
 mod.io needs a write-capable OAuth token: on mod.io, avatar > API Access > create a token, then put it in
-the `MODIO_TOKEN` environment variable or in `%USERPROFILE%\.modio-token`. Token files are gitignored.
+the `MODIO_TOKEN` environment variable or in `%USERPROFILE%\.modio-token`. Nexus needs a personal API key from
+nexusmods.com/settings/api-keys in `NEXUS_API_KEY` or `%USERPROFILE%\nexus-apikey.txt`. The mod file to add versions to is
+resolved from the mod page (pass `-NexusFileId` only if the page ever has more than one active file). `-NexusManual`
+falls back to opening the upload page. Token files are gitignored.
 
 ## How it works on RemasteredRemastered changed XML modding. Replacing a vanilla gameplay XML wholesale crashes the game at
 startup. Instead a mod ships a DLC whose `.reddlc` carries a `CR4DefinitionsDLCMounter` pointing at
