@@ -1,0 +1,96 @@
+[size=5][b]Spoils of the Hunt[/b][/size]
+[i]Lore-friendly saddle trophy bonuses for The Witcher 3: Wild Hunt – Remastered[/i]
+
+A griffin's head should not make you find more coins. In vanilla, every trophy you hang on Roach gives one of five generic bonuses: +5% XP from monsters, +5% XP from humans, +5% extra herbs, +5% gold, or +10% dismember chance. None of them has anything to do with the beast you killed.
+
+Spoils of the Hunt replaces all of them. Each trophy now carries something that came from the hunt itself:
+
+[list]
+[*][b]Hunter's knowledge:[/b] attack power against the monster's own class. Hang a griffin head and you hit Hybrids (griffins, sirens, harpies, succubi) 10% harder.
+[*][b]A trait of the creature:[/b] forktail and arachas venom give poison resistance, the Hound of the Wild Hunt gives frost resistance, the earth elemental and chort harden you against blunt blows, the nightwraith strengthens Yrden, the succubus strengthens Axii.
+[*][b]Tiered by the hunt:[/b] minor beasts give 5%, named contract monsters 10%, rare ones such as the archgriffin or white basilisk 15% or two smaller bonuses.
+[/list]
+
+Works on any save. Trophies you already own pick up their new bonus the moment you load. New Game Plus is supported. All 40 trophies across the base game, Hearts of Stone and Blood and Wine are covered.
+
+[size=4][b]The bonuses[/b][/size]
+
+[b]Base game[/b]
+[list]
+[*]Royal Griffin, Griffin (sq108): +10% attack vs. Hybrids
+[*]Archgriffin: +15% attack vs. Hybrids
+[*]Shrieker (Cockatrice): +10% attack vs. Draconids
+[*]Arachas: +15% poison resistance
+[*]Jenny o' the Woods (Nightwraith): +10% Yrden sign intensity
+[*]Ekimmara: +10% attack vs. Vampires
+[*]Wyvern (both): +10% attack vs. Draconids
+[*]Grave Hag: +10% attack vs. Necrophages
+[*]Chort: +10% bludgeoning resistance
+[*]Fogler: +5% attack vs. Necrophages
+[*]Cave Troll: +5% attack vs. Ogroids, +5% bludgeoning resistance
+[*]Nekker Warrior: +5% attack vs. Ogroids
+[*]Water Hag: +5% poison resistance
+[*]Leshen (both): +10% attack vs. Relicts
+[*]Fiend: +10% attack vs. Relicts
+[*]Phantom of Eldberg (Wraith): +10% attack vs. Specters
+[*]Forktail: +15% poison resistance
+[*]Ekhidna (Siren): +5% attack vs. Hybrids
+[*]Succubus: +10% Axii sign intensity
+[*]Katakan: +10% attack vs. Vampires, +5% critical hit chance
+[*]Doppler: +10% gold from loot (kept: the one you kill is a thief)
+[*]Earth Elemental: +15% bludgeoning resistance
+[*]Hound of the Wild Hunt: +15% frost resistance
+[*]Noonwraith (both): +10% attack vs. Specters
+[/list]
+
+[b]Hearts of Stone[/b]
+[list]
+[*]Pig-race trophy: +15% gold (kept: it's a joke, and it should stay one)
+[*]Shaelmaar: +10% bludgeoning resistance
+[/list]
+
+[b]Blood and Wine[/b]
+[list]
+[*]Cyclops: +10% attack vs. Ogroids, +5% bludgeoning resistance
+[*]Wight: +10% attack vs. Cursed Ones
+[*]Garkain: +10% attack vs. Vampires
+[*]Spriggan: +10% attack vs. Relicts
+[*]Griffin: +10% attack vs. Hybrids
+[*]Night wraith: +10% attack vs. Specters
+[*]Dracolizard: +15% fire resistance
+[*]White Basilisk: +10% attack vs. Draconids, +10% poison resistance
+[*]Shaelmaar Matriarch: +15% bludgeoning resistance
+[*]Cammerlengo: +15% attack vs. Vampires
+[/list]
+
+The "attack vs. class" percentages mean real damage: a +10% trophy multiplies your attack power against that class by 1.10. (Vanilla oils add their figure to the multiplier instead, which is why a superior oil's "+50%" is worth less than it sounds.) Trophies and oils stack.
+
+[size=4][b]Installation[/b][/size]
+
+[b]Vortex:[/b] install and deploy like any other mod.
+[b]Manual:[/b] quit the game, then copy the [b]DLC[/b] and [b]Mods[/b] folders from the archive into your game folder (the one that contains bin, content, DLC and Mods).
+
+The mod has two parts and needs both: [i]DLC\dlcSpoilsOfTheHunt[/i] (the trophy definitions) and [i]Mods\modSpoilsOfTheHunt[/i] (tooltip table, text labels and one script).
+
+[b]Uninstall:[/b] remove both folders. Trophies revert to vanilla. Nothing is stored in your saves.
+
+[size=4][b]Compatibility[/b][/size]
+[list]
+[*]Requires The Witcher 3: Wild Hunt – Remastered (game version 5.x). Not for the 4.x next-gen or 1.32 classic builds.
+[*][b]No Script Merger needed.[/b] The mod ships no copy of any vanilla script. Its single script is a scope annotation (@wrapMethod), the Remastered way, so it cannot conflict with other script mods.
+[*]No vanilla XML file is replaced. Trophy abilities are overridden by name through the Remastered on_conflict mechanism. Only a mod that also redefines trophy abilities would conflict.
+[*]One shared file: gameplay\globals\tooltip_settings.csv is replaced to add display rows for fire and frost resistance. If another mod replaces the same file, the only effect is whether those two labels show on two trophies.
+[*]New Game Plus supported.
+[/list]
+
+[size=4][b]Known limits[/b][/size]
+[list]
+[*]Trophy descriptions still show the generic vanilla text; only the stat line changes. Per-trophy flavour text is planned.
+[*]Only the trophy on Roach's saddle counts, as in vanilla. Trophies in your bags do nothing.
+[/list]
+
+[size=4][b]Planned[/b][/size]
+Fusing trophies so collectors can carry several bonuses, trophies that grow with kills of their class, a configuration page, and trophy dealers in Novigrad, Skellige and Toussaint. Feedback on balance is welcome.
+
+[size=4][b]Source[/b][/size]
+Build scripts, the full bonus table and the test harness are open: [url=https://github.com/serwidlick/spoils-of-the-hunt]github.com/serwidlick/spoils-of-the-hunt[/url]
