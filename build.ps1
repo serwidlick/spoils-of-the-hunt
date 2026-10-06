@@ -24,7 +24,7 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
-$version = '1.0.0'
+$version = '1.1.0'
 # Integer the game compares against its own build ("GAME version: current=%d, encountered=%d"). REDkit writes it
 # into every project's info.json; 29 is what REDkit 5.0 projects published after the Remastered launch carry.
 $modioGameVersion = '29'
